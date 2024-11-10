@@ -11,7 +11,8 @@ const repoName = githubRepository
 const nextConfig: NextConfig = {
   /* config options here */
   output: "export",
-  // basePath: "/about-me",
+  images: {unoptimized: true},
+  basePath: repoName,
   publicRuntimeConfig: {
     basePath: repoName,
   },

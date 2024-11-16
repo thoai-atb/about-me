@@ -3,7 +3,7 @@ import BasePathImage from './components/BasePathImage';
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-gray-900 font-sans">
+    <div className="min-h-screen text-gray-900 font-sans">
       {/* Navigation Bar */}
       <Navigation />
       

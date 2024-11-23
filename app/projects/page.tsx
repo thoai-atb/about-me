@@ -46,10 +46,10 @@ export default function Projects() {
   };
 
   return (
-    <div className="min-h-screen bg-green-100 font-sans">
+    <div className="min-h-screen bg-primary-100 font-sans">
       <Navigation />
       <PageContainer>
-        <h1 className="text-2xl uppercase text-green-900 font-bold text-center mb-8">
+        <h1 className="text-2xl uppercase text-primary-900 font-bold text-center mb-8">
           My Projects
         </h1>
         <div>

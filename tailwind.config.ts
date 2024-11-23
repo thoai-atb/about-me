@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import tailwindAnimate from "tailwindcss-animate"
+import colors from "tailwindcss/colors"
 
 export default {
   content: [
@@ -12,6 +13,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: colors.emerald,
       },
       transitionDelay: {
         '2000': '2000ms',

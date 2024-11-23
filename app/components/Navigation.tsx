@@ -15,7 +15,7 @@ export default function Navigation() {
           <Link
             key={item.name}
             href={item.href}
-            className="text-md uppercase font-semibold text-black hover:text-green-500 cursor-pointer transition-colors duration-300"
+            className="text-md uppercase font-semibold text-black hover:text-primary-500 cursor-pointer transition-colors duration-300"
           >
             {item.name}
           </Link>

@@ -9,13 +9,13 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="bg-gray-200 shadow-md">
-      <div className="flex justify-around items-center py-4">
+    <nav className="bg-white shadow-md">
+      <div className="flex justify-center items-center py-4 space-x-8">
         {navItems.map((item) => (
           <Link
             key={item.name}
             href={item.href}
-            className="text-lg font-semibold text-gray-700 hover:text-indigo-600 cursor-pointer"
+            className="text-md uppercase font-semibold text-black hover:text-green-500 cursor-pointer transition-colors duration-300"
           >
             {item.name}
           </Link>

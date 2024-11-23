@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwindAnimate from "tailwindcss-animate"
 
 export default {
   content: [
@@ -12,7 +13,21 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      transitionDelay: {
+        '2000': '2000ms',
+        '3000': '3000ms',
+        '4000': '4000ms',
+        '5000': '5000ms',
+        '6000': '6000ms',
+      },
+      transitionDuration: {
+        '2000': '2000ms',
+        '3000': '3000ms',
+        '4000': '4000ms',
+        '5000': '5000ms',
+        '6000': '6000ms',
+      }
     },
   },
-  plugins: [],
+  plugins: [tailwindAnimate],
 } satisfies Config;

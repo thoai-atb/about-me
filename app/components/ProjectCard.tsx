@@ -20,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div
-      className={`flex flex-col md:flex-row gap-6 items-center bg-gray-100 px-16 py-6 rounded-lg shadow-lg mb-6 h-80 ${
+      className={`flex flex-col md:flex-row gap-6 items-center bg-white px-16 py-6 rounded-lg shadow-lg mb-6 h-80 ${
         flip ? "md:flex-row-reverse" : ""
       }`}
     >

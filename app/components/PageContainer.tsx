@@ -4,7 +4,7 @@ interface ContainerProps {
   children: React.ReactNode;
 }
 
-const Container: React.FC<ContainerProps> = ({ children }) => {
+const PageContainer: React.FC<ContainerProps> = ({ children }) => {
   return (
     <div className="max-w-screen-2xl mx-auto p-6 md:p-12">
       {children}
@@ -12,4 +12,4 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
   );
 };
 
-export default Container;
+export default PageContainer;

@@ -13,7 +13,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: colors.emerald,
+        primary: colors.sky,
       },
       transitionDelay: {
         '2000': '2000ms',

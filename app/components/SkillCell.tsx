@@ -7,7 +7,7 @@ interface SkillCellProps {
 const SkillCell: React.FC<SkillCellProps> = ({ title, skills, className }) => {
   return (
     <div
-      className={`p-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg transform ${className}`}
+      className={`p-4 bg-white overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg transform ${className}`}
     >
       <h3 className="text-xl font-semibold text-primary-600 mb-2 hover:text-primary-500 transition-colors duration-300">
         {title}

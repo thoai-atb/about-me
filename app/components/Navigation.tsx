@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Navigation() {
   const navItems = [
-    { name: 'Home', href: '/' },
+    { name: 'Profile', href: '/' },
     { name: 'Projects', href: '/projects' },
     { name: 'Experiences', href: '/experiences' },
     { name: 'Hobbies', href: '/hobbies' },

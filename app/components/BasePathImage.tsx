@@ -11,6 +11,7 @@ const BasePathImage: React.FC<BasePathImageProps> = ({
   height = 20,
   priority = false,
   className = "",
+  ...props
 }) => {
   // Access client-side base path
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ""; // Fallback to empty if not defined
@@ -26,6 +27,7 @@ const BasePathImage: React.FC<BasePathImageProps> = ({
       width={width}
       height={height}
       priority={priority}
+      {...props}
     />
   );
 };

@@ -37,9 +37,9 @@ export default function Home() {
           </strong>
           ,<i> proficient</i> in multiple programming languages such as{" "}
           <strong>Python, JavaScript, Java</strong> covering different domains
-          like <strong>Front-End, Back-End, and DevOps</strong>. I {" "}
-          <i>learn new technologies </i> through working on multiple
-          personal projects from time to time.
+          like <strong>Front-End, Back-End, and DevOps</strong>. I{" "}
+          <i>learn new technologies </i> through working on multiple personal
+          projects from time to time.
         </Section>
       </div>
 
@@ -60,13 +60,15 @@ export default function Home() {
             contentClassName="text-lg text-left"
           >
             <p className="text-gray-600">
-              I have worked on a variety of exciting projects that significantly enhanced my technical skills. You can explore them all on the dedicated projects page.
+              I have worked on a variety of exciting projects that significantly
+              enhanced my technical skills. You can explore them all on the
+              dedicated projects page.
             </p>
             <a
-              href="/projects"
-              className="mt-4 p-2 px-4 rounded-3xl hover:rounded-xl transition-all inline-block bg-primary-500 text-white font-semibold hover:translate-x-2 duration-300"
+              href={process.env.NEXT_PUBLIC_BASE_PATH + "/projects"}
+              className="mt-4 p-2 px-4 group hover:pr-6 rounded-3xl transition-all inline-block bg-primary-500 text-white font-semibold hover:translate-x-2 duration-300"
             >
-              View My Projects →
+              View My Projects <span className="transition-all duration-500 group-hover:ml-4">→</span>
             </a>
           </Section>
         </div>
@@ -89,8 +91,37 @@ export default function Home() {
       </Section>
 
       {/* Education Section */}
-      <Section title="Education" className="flex-1 bg-primary-100 duration-3000">
-        Bachelor of Science in Computer Science, ABC University (2018 - 2022)
+      <Section
+        title="Education"
+        className="flex-1 bg-primary-100 duration-3000"
+        contentClassName="text-center flex justify-center"
+      >
+        <div className="max-w-screen-md flex flex-col md:flex-row items-center gap-10 w-full text-lg">
+          <BasePathImage
+            className="w-40 h-40"
+            alt="HCMIU"
+            src="/hcmiu_logo.png"
+          ></BasePathImage>
+          <div className="flex-col items-start">
+            <h3 className="pl-8 text-xl text-left text-primary-800 font-bold">
+              HCMC International University - VNU
+            </h3>
+            <div className="pl-8 text-sm text-left text-gray-500 mb-4">
+              Bachelor’s Degree in Computer Science 2022
+            </div>
+            <ul className="list-disc list-inside text-left pl-8">
+              <li className="hover:text-primary-600 hover:translate-x-1 transition-transform duration-300">
+                Excellent student in 3 semesters (GPA ≥ 9.0 / 10.0)
+              </li>
+              <li className="hover:text-primary-600 hover:translate-x-1 transition-transform duration-300">
+                Good student in 4 semesters (GPA ≥ 8.0 / 10.0)
+              </li>
+              <li className="hover:text-primary-600 hover:translate-x-1 transition-transform duration-300">
+                Encouragement scholarship in 5 semesters
+              </li>
+            </ul>
+          </div>
+        </div>
       </Section>
     </div>
   );

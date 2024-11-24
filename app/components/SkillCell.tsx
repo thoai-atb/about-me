@@ -9,7 +9,7 @@ const SkillCell: React.FC<SkillCellProps> = ({ title, skills, className }) => {
     <div
       className={`p-4 bg-white shadow-md hover:shadow-lg transition-shadow duration-300 rounded-lg transform ${className}`}
     >
-      <h3 className="text-xl font-semibold text-primary-600 mb-2 hover:text-green-500 transition-colors duration-300">
+      <h3 className="text-xl font-semibold text-primary-600 mb-2 hover:text-primary-500 transition-colors duration-300">
         {title}
       </h3>
       <ul className="px-4 text-left text-lg list-disc list-inside text-gray-600">

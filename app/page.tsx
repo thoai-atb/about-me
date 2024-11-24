@@ -2,6 +2,7 @@ import Navigation from "./components/Navigation";
 import BasePathImage from "./components/BasePathImage";
 import Section from "./components/Section";
 import SkillCell from "./components/SkillCell";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
         </div>
         {/* Introduction Section */}
         <Section
-          title="About Myself"
+          title="About Me"
           className="bg-white flex-1 duration-1000"
           contentClassName="text-xl"
         >
@@ -41,76 +42,110 @@ export default function Home() {
         </Section>
       </div>
 
-      {/* Skills Section */}
-      <Section
-        title="Skills"
-        className="flex-1 bg-primary-100 py-8"
-        contentClassName="flex justify-center"
-      >
-        <div className="max-w-screen-2xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
-            <SkillCell
-              title="Programming Languages"
-              skills={["JavaScript", "Python", "Java", "TTCN-3", "C#"]}
-            />
-            <SkillCell
-              title="Web Frameworks"
-              skills={["ReactJS, NextJS", "NodeJS", "ExpressJS", "Flask", "HTML, CSS, Tailwind"]}
-            />
-            <SkillCell
-              title="Database"
-              skills={["MongoDB", "MySQL", "SQL Server", "PostgreSQL"]}
-            />
-            <SkillCell
-              title="Tools and IDEs"
-              skills={[
-                "VSCode",
-                "Vim",
-                "Wireshark",
-                "MobaXTerm",
-                "Visual Studio",
-                "Eclipse",
-              ]}
-            />
-            <SkillCell
-              title="DevOps Skills"
-              skills={[
-                "Linux",
-                "Docker",
-                "Kubernetes",
-                "Jenkins",
-                "Python",
-                "Git",
-                "Bash",
-              ]}
-            />
-            <SkillCell
-              title="Knowledge"
-              skills={[
-                "Scrum Agile, OOP",
-                "Restful API, Socket API",
-                "HTTP, TLS",
-                "Containerization",
-                "Design patterns",
-                "Computer network",
-                "Microservices",
-                "CI/CD",
-              ]}
-            />
-            <SkillCell
-              title="Soft Skills"
-              className="col-span-2"
-              skills={[
-                "Use English everyday (IELTS 6.5)",
-                "Independent researching and troubleshooting",
-                "Clear communication and engaging presentation",
-                "Problem solving through deep understanding",
-                "Find new ways to enhance work efficiency of self and team",
-              ]}
-            />
-          </div>
+      <div className="flex flex-col xl:flex-row">
+        <div className="flex flex-col md:flex-row xl:flex-col items-center bg-white">
+          {/* Contact Section */}
+          <Section
+            title="My Contact"
+            className="xl:w-96 bg-white duration-5000"
+          >
+            <Contact />
+          </Section>
+          <div className="xl:w-5/6 xl:h-0 xl:border-2 border-primary-500 slide-in-from-left-10 fade-in-0 duration-3000 animate-in"></div>
+          {/* Projects Section */}
+          <Section
+            title="My Projects"
+            className="xl:w-96 bg-white duration-5000"
+            contentClassName="text-lg text-left"
+          >
+            <p className="text-gray-600">
+              I have worked on a variety of exciting projects that have significantly enhanced my technical skills. You can explore them all on the dedicated projects page.
+            </p>
+            <a
+              href="/projects"
+              className="mt-4 p-2 px-4 rounded-3xl hover:rounded-xl transition-all inline-block bg-primary-500 text-white font-semibold hover:translate-x-2 duration-300"
+            >
+              View My Projects →
+            </a>
+          </Section>
         </div>
-      </Section>
+        {/* Skills Section */}
+        <Section
+          title="Skills"
+          className="flex-1 bg-primary-100 py-8"
+          contentClassName="flex justify-center"
+        >
+          <div className="max-w-screen-2xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+              <SkillCell
+                title="Programming Languages"
+                skills={["JavaScript", "Python", "Java", "TTCN-3", "C#"]}
+              />
+              <SkillCell
+                title="Web Frameworks"
+                skills={[
+                  "ReactJS, NextJS",
+                  "NodeJS",
+                  "ExpressJS",
+                  "Flask",
+                  "HTML, CSS, Tailwind",
+                ]}
+              />
+              <SkillCell
+                title="Database"
+                skills={["MongoDB", "MySQL", "SQL Server", "PostgreSQL"]}
+              />
+              <SkillCell
+                title="Tools and IDEs"
+                skills={[
+                  "VSCode",
+                  "Vim",
+                  "Wireshark",
+                  "MobaXTerm",
+                  "Visual Studio",
+                  "Eclipse",
+                ]}
+              />
+              <SkillCell
+                title="DevOps Skills"
+                skills={[
+                  "Linux",
+                  "Docker",
+                  "Kubernetes",
+                  "Jenkins",
+                  "Python",
+                  "Git",
+                  "Bash",
+                ]}
+              />
+              <SkillCell
+                title="Knowledge"
+                skills={[
+                  "Scrum Agile, OOP",
+                  "Restful API, Socket API",
+                  "HTTP, TLS",
+                  "Containerization",
+                  "Design patterns",
+                  "Computer network",
+                  "Microservices",
+                  "CI/CD",
+                ]}
+              />
+              <SkillCell
+                title="Soft Skills"
+                className="col-span-2"
+                skills={[
+                  "Use English everyday (IELTS 6.5)",
+                  "Independent researching and troubleshooting",
+                  "Clear communication and engaging presentation",
+                  "Problem solving through deep understanding",
+                  "Find new ways to enhance work efficiency of self and team",
+                ]}
+              />
+            </div>
+          </div>
+        </Section>
+      </div>
 
       {/* Work Experience Section */}
       <Section
@@ -126,17 +161,6 @@ export default function Home() {
         </p>
       </Section>
 
-      {/* Projects Section */}
-      <Section title="Projects" className="flex-1 bg-primary-100 duration-5000">
-        <p>
-          <strong>Portfolio Website</strong>: A responsive portfolio showcasing
-          my work using Next.js and TailwindCSS.
-        </p>
-        <p>
-          <strong>E-commerce App</strong>: Built a feature-rich online store
-          with React and Firebase.
-        </p>
-      </Section>
       {/* Education Section */}
       <Section title="Education" className="flex-1 bg-white duration-5000">
         Bachelor of Science in Computer Science, ABC University (2018 - 2022)

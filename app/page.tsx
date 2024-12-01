@@ -22,7 +22,7 @@ export default function Home() {
           />
           <div className="text-center text-primary-900 text-4xl mt-6 md:mt-0 md:ml-8 leading-snug font-thin">
             Hi, I am <span className="text-white">Ly Bao Thoai</span>. <br />
-            Software & DevOps Engineer
+            Software Developer & DevOps
           </div>
         </div>
         {/* Introduction Section */}
@@ -31,15 +31,14 @@ export default function Home() {
           className="bg-white flex-1 duration-1000"
           contentClassName="text-xl"
         >
-          I am a passionate Software and DevOps Engineer with{" "}
-          <strong>
-            2+ years experience in design, develop, and deploy software
-          </strong>
-          ,<i> proficient</i> in multiple programming languages such as{" "}
-          <strong>Python, JavaScript, Java</strong> covering different domains
-          like <strong>Front-End, Back-End, and DevOps</strong>. I{" "}
-          <i>learn new technologies </i> through working on multiple personal
-          projects from time to time.
+          I am a passionate Software Developer and DevOps with{" "}
+          <strong>2+ years of working experience</strong> in designing, developing, and
+          deploying software, along with <strong>abundant projects</strong> that I
+          did by myself. I can <i>proficiently use</i> programming languages
+          such as <strong>Python, JavaScript, Java</strong> and other development tools, covering different
+          domains like <strong>Front-End, Back-End, and DevOps</strong>. To expand my expertise, I am
+          now learning and doing projects that uses <i>LLMs</i>,
+          specifically <i>OpenAI API</i>.
         </Section>
       </div>
 
@@ -60,15 +59,18 @@ export default function Home() {
             contentClassName="text-lg text-left"
           >
             <p className="text-gray-600">
-              I have worked on a variety of exciting projects that significantly
-              enhanced my technical skills. You can explore them all on the
-              dedicated projects page.
+              I have worked on a variety of exciting projects whenever an idea
+              popped into my mind. You can explore them all on the dedicated
+              projects page.
             </p>
             <a
               href={process.env.NEXT_PUBLIC_BASE_PATH + "/projects"}
               className="mt-4 p-2 px-4 group hover:pr-6 rounded-3xl transition-all inline-block bg-primary-500 text-white font-semibold hover:translate-x-2 duration-300"
             >
-              View My Projects <span className="transition-all duration-500 group-hover:ml-4">→</span>
+              View My Projects{" "}
+              <span className="transition-all duration-500 group-hover:ml-4">
+                →
+              </span>
             </a>
           </Section>
         </div>

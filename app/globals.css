@@ -23,3 +23,8 @@ body {
 .gradient-opacity {
   background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
 }
+
+.custom-star-list li::before {
+  content: "★";  /* Unicode for star symbol */
+  margin-right: 8px; /* Space between the star and the list item */
+}

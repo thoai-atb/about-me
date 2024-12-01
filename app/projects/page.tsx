@@ -1,78 +1,98 @@
 "use client";
 import Navigation from "../components/Navigation";
-import ProjectCard from "../components/ProjectCard";
-import PageContainer from "../components/PageContainer";
 import ImageModal from "../components/ImageModal";
-import { useState } from "react";
-
-const projects = [
-  {
-    title: "Maze Escaper",
-    description:
-      "This is a brief description of the project, highlighting its purpose and key features.",
-    imageSrc: "/maze_escaper.png",
-    imageAlt: "Representative image of the project",
-  },
-  {
-    title: "Texas Holdem",
-    description:
-      "This is a brief description of the project, highlighting its purpose and key features.",
-    imageSrc: "/texas_holdem.png",
-    imageAlt: "Representative image of the project",
-  },
-  {
-    title: "Student Learning Progress System",
-    description:
-      "This is a brief description of the project, highlighting its purpose and key features.",
-    imageSrc: "/student_learning_progress.png",
-    imageAlt: "Representative image of the project",
-  },
-  {
-    title: "Rubik's Cube OLL Distribution",
-    description:
-      "This is a brief description of the project, highlighting its purpose and key features.",
-    imageSrc: "/oll_distribution.png",
-    imageAlt: "Representative image of the project",
-  },
-];
+import { useRef, useState, useEffect } from "react";
+import { ProjectItem } from "./projectItem";
+import projectData from "./projectData";
+import ProjectBlog from "./components/ProjectBlog";
+import ProjectNavigationPane from "./components/ProjectNavigationPane";
 
 export default function Projects() {
   const [imageSrc, setImageSrc] = useState<string | null>(null);
-
-  console.log(imageSrc);
+  const [activeIndex, setActiveIndex] = useState<number | null>(null); // Track active section
+  const sectionRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const handleModalClose = () => {
     setImageSrc(null); // Close the modal by setting the image source to null
   };
 
+  const scrollToProject = (index: number) => {
+    if (sectionRefs.current[index]) {
+      sectionRefs.current[index]!.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, // Trigger when 50% of the section is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const index = sectionRefs.current.findIndex(
+            (ref) => ref === entry.target
+          );
+          setActiveIndex(index); // Update the active index
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections
+    sectionRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    // Cleanup observer on component unmount
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="min-h-screen bg-primary-100 font-sans">
+    <div className="min-h-screen bg-white font-sans">
       <Navigation />
-      <PageContainer>
-        <h1 className="text-2xl uppercase text-primary-900 font-bold text-center mb-8">
-          My Projects
-        </h1>
-        <div>
-          {projects.map((project, index) => (
-            <ProjectCard
+      <div>
+        <div className="flex justify-center">
+          <div className="bg-primary-400 rounded-full mx-20 text-primary-900 text-4xl font-thin text-center px-20 py-4">
+            <span>This page contains projects that I did</span>
+          </div>
+        </div>
+
+        <ProjectNavigationPane
+          projects={projectData}
+          activeIndex={activeIndex} // Pass active index
+          onProjectClick={(project) => {
+            const index = projectData.findIndex(
+              (p) => p.title === project.title
+            );
+            scrollToProject(index);
+          }}
+        />
+
+        <div className="max-w-screen-lg mx-auto p-6 md:p-12">
+          {projectData.map((project: ProjectItem, index) => (
+            <ProjectBlog
               key={project.title}
-              title={project.title}
-              description={project.description}
-              imageSrc={project.imageSrc}
-              imageAlt={project.imageAlt}
-              flip={index % 2 === 0}
+              ref={(el) => {
+                sectionRefs.current[index] = el;
+              }}
+              project={project}
               onImageClick={() => setImageSrc(project.imageSrc)}
             />
           ))}
         </div>
-      </PageContainer>
 
-      {imageSrc && (
-        <ImageModal
-          imageSrc={imageSrc}
-          onClose={() => handleModalClose()} // Pass close handler to modal
-        />
-      )}
+        {imageSrc && (
+          <ImageModal
+            imageSrc={imageSrc}
+            onClose={() => handleModalClose()} // Pass close handler to modal
+          />
+        )}
+      </div>
     </div>
   );
 }

@@ -4,12 +4,11 @@ export default function Navigation() {
   const navItems = [
     { name: 'Profile', href: '/' },
     { name: 'Projects', href: '/projects' },
-    { name: 'Experiences', href: '/experiences' },
     { name: 'Hobbies', href: '/hobbies' },
   ];
 
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="bg-white">
       <div className="flex justify-center items-center py-4 space-x-8">
         {navItems.map((item) => (
           <Link

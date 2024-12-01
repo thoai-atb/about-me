@@ -5,7 +5,7 @@ const SkillsSection = () => {
     <div className="max-w-screen-2xl">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
         <SkillCell
-          title="Development Languages"
+          title="Languages"
           skills={[
             "JavaScript",
             "Python",
@@ -16,13 +16,15 @@ const SkillsSection = () => {
           ]}
         />
         <SkillCell
-          title="Frameworks & Technologies"
+          title="Technologies"
           skills={[
             "ReactJS, NextJS",
-            "NodeJS, ExpressJS",
-            "OpenAI API",
+            "NodeJS",
+            "ExpressJS",
+            "Socket IO",
             "Flask",
-            "HTML, Tailwind CSS",
+            "OpenAI API",
+            "Tailwind",
           ]}
         />
         <SkillCell
@@ -34,10 +36,12 @@ const SkillsSection = () => {
           skills={[
             "VSCode",
             "Vim",
-            "Wireshark",
-            "MobaXTerm",
             "Visual Studio",
             "Eclipse",
+            "Wireshark",
+            "MobaXTerm",
+            "Postman",
+            "Figma",
           ]}
         />
         <SkillCell
@@ -47,16 +51,16 @@ const SkillsSection = () => {
             "Docker",
             "Kubernetes, Helm",
             "Jenkins",
-            "Python",
             "Git",
             "Bash",
+            "Nginx",
           ]}
         />
         <SkillCell
           title="Knowledge"
           skills={[
             "Scrum Agile, OOP",
-            "Restful API, Socket API",
+            "REST, Socket API",
             "Containerization",
             "Generative AI",
             "Computer network",
@@ -71,7 +75,7 @@ const SkillsSection = () => {
             "Independent researching and troubleshooting",
             "Clear communication and engaging presentation",
             "Problem solving through deep understanding",
-            "Find new ways to enhance work efficiency of self and team",
+            "Optimize team and personal daily work efficiency",
           ]}
         />
       </div>

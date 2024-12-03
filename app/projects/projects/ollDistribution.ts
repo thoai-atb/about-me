@@ -1,17 +1,14 @@
 import { ProjectItem } from "../projectItem";
 
 const projectItem: ProjectItem = {
-  title: "Student Learning Progress System",
+  title: "Rubik's Cube OLL Distribution",
   description:
-    "An event-driven architecture to manage student learning progress in universities.",
-  highlights: [
-    "User interface for managing services",
-    "Error handling mechanism",
-  ],
-  effort: "> 2 months",
-  technologies: ["Kafka", "Java", "NodeJS", "ReactJS"],
-  imageSrc: "/student_learning_progress.png",
-  imageAlt: "Representative image of the project",
+    "Calculate how likely we see an OLL case when solving a Rubik's cube using CFOP method.",
+  highlights: ["Calculate probability based on simulation of case generation"],
+  effort: "< 1 day",
+  technologies: ["Python"],
+  imageSrc: "/oll_distribution.png",
+  imageAlt: "The collection of OLL cases with their corresponding likelihood in percentage (%)",
 };
 
 export default projectItem;

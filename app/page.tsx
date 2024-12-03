@@ -47,15 +47,15 @@ export default function Home() {
           {/* Contact Section */}
           <Section
             title="My Contact"
-            className="xl:w-96 bg-white duration-3000"
+            className="xl:w-96 bg-white duration-2000"
           >
             <ContactSection />
           </Section>
-          <div className="xl:w-5/6 xl:h-0 xl:border-2 border-primary-500 slide-in-from-left-10 fade-in-0 duration-3000 animate-in"></div>
+          <div className="xl:w-5/6 xl:h-0 xl:border-2 border-primary-500 slide-in-from-left-10 fade-in-0 duration-2000 animate-in"></div>
           {/* Projects Section */}
           <Section
             title="My Projects"
-            className="xl:w-96 bg-white duration-3000"
+            className="xl:w-96 bg-white duration-2000"
             contentClassName="text-lg text-left"
           >
             <p className="text-gray-600">

@@ -13,7 +13,7 @@ const projectItem: ProjectItem = {
   effort: "1 Month",
   technologies: ["OpenAI API", "MongoDB", "NodeJS", "SocketIO", "ReactJS"],
   imageSrc: "/note_taker.png",
-  imageAlt: "Note Taker",
+  imageAlt: "A question about \"Quan\" posed to the AI Note Taker and its response",
 };
 
 export default projectItem;

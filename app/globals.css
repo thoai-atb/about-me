@@ -28,3 +28,13 @@ body {
   content: "★";  /* Unicode for star symbol */
   margin-right: 8px; /* Space between the star and the list item */
 }
+
+.scroll-hidden {
+  overflow: hidden;  /* Prevents scrollbars from appearing */
+  -ms-overflow-style: none;  /* For IE and Edge */
+  scrollbar-width: none;  /* For Firefox */
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;  /* For Webkit browsers (Chrome, Safari) */
+}

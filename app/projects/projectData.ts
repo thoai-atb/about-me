@@ -2,8 +2,8 @@ import { ProjectItem } from "./projectItem";
 import noteTaker from "./projects/noteTaker";
 import multiplayerPoker from "./projects/multiplayerPoker";
 import mazeEscaper from "./projects/mazeEscaper";
-import studentSystem from "./projects/studentSystem";
 import ollDistribution from "./projects/ollDistribution";
+import studentSystem from "./projects/studentSystem";
 
 const projects: ProjectItem[] = [
   noteTaker,

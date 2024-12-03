@@ -22,9 +22,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       }`}
     >
       {/* Left side: Title and Description */}
-      <div className={`w-1/2 bg-primary-100 p-6 md:text-left flex flex-col`}>
+      <div className={`w-1/2 bg-secondary-100 p-6 md:text-left flex flex-col`}>
         <h2
-          className={`text-2xl font-bold mb-2 text-primary-800`}
+          className={`text-2xl font-bold mb-2 text-secondary-800`}
         >
           {project.title}
         </h2>
@@ -43,7 +43,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       {/* Right side: Image */}
       <div
         onClick={() => onImageClick?.()}
-        className={`w-1/2 mt-4 bg-primary-200 md:mt-0 ${flip ? "" : ""}`}
+        className={`w-1/2 mt-4 bg-secondary-200 md:mt-0 ${flip ? "" : ""}`}
       >
         <BasePathImage
           src={project.imageSrc}

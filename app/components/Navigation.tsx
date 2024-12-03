@@ -1,10 +1,10 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Navigation() {
   const navItems = [
-    { name: 'Profile', href: '/' },
-    { name: 'Projects', href: '/projects' },
-    { name: 'Hobbies', href: '/hobbies' },
+    { name: "Profile", href: "/", theme: "text-primary-600" },
+    { name: "Projects", href: "/projects", theme: "text-secondary-600" },
+    { name: "Others", href: "/others", theme: "text-tertiary-600" },
   ];
 
   return (
@@ -14,7 +14,7 @@ export default function Navigation() {
           <Link
             key={item.name}
             href={item.href}
-            className="text-md uppercase font-semibold text-black hover:text-primary-500 cursor-pointer transition-colors duration-300"
+            className={`text-md uppercase font-semibold text-black hover:${item.theme} cursor-pointer transition-colors duration-300`}
           >
             {item.name}
           </Link>

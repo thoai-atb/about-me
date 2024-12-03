@@ -12,7 +12,7 @@ const projectItem: ProjectItem = {
   effort: "1 Month",
   technologies: ["NodeJS", "SocketIO", "ReactJS"],
   imageSrc: "/texas_holdem.png",
-  imageAlt: "Representative image of the project",
+  imageAlt: "Screenshot during the game, 1 player and 8 bots, current turn belongs to the player and player is selecting the bet size",
 };
 
 export default projectItem;

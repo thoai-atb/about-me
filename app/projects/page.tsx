@@ -55,35 +55,37 @@ export default function Projects() {
   return (
     <div className="min-h-screen bg-white font-sans">
       <Navigation />
-      <div>
-        <div className="flex justify-center">
-          <div className="bg-primary-400 rounded-full mx-20 text-primary-900 text-4xl font-thin text-center px-20 py-4">
-            <span>This page contains projects that I did</span>
-          </div>
+      <div className="flex justify-center">
+        <div className="bg-secondary-400 w-full rounded-full mx-8 mb-8 text-secondary-900 text-4xl font-thin text-center px-20 py-4 slide-in-from-right-10 duration-1000 animate-in">
+          <span>Welcome to my </span>
+          <span className="text-white">Projects</span>
         </div>
+      </div>
+      <div>
+        <div className="flex items-start gap-8">
+          <ProjectNavigationPane
+            projects={projectData}
+            activeIndex={activeIndex} // Pass active index
+            onProjectClick={(project) => {
+              const index = projectData.findIndex(
+                (p) => p.title === project.title
+              );
+              scrollToProject(index);
+            }}
+          />
 
-        <ProjectNavigationPane
-          projects={projectData}
-          activeIndex={activeIndex} // Pass active index
-          onProjectClick={(project) => {
-            const index = projectData.findIndex(
-              (p) => p.title === project.title
-            );
-            scrollToProject(index);
-          }}
-        />
-
-        <div className="max-w-screen-lg mx-auto p-6 md:p-12">
-          {projectData.map((project: ProjectItem, index) => (
-            <ProjectBlog
-              key={project.title}
-              ref={(el) => {
-                sectionRefs.current[index] = el;
-              }}
-              project={project}
-              onImageClick={() => setImageSrc(project.imageSrc)}
-            />
-          ))}
+          <div className="max-w-screen-md xl:max-w-screen-lg mx-auto">
+            {projectData.map((project: ProjectItem, index) => (
+              <ProjectBlog
+                key={project.title}
+                ref={(el) => {
+                  sectionRefs.current[index] = el;
+                }}
+                project={project}
+                onImageClick={() => setImageSrc(project.imageSrc)}
+              />
+            ))}
+          </div>
         </div>
 
         {imageSrc && (

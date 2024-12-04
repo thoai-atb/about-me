@@ -1,5 +1,5 @@
 import React from "react";
-import BasePathImage from "./BasePathImage";
+import BasePathImage from "../../components/BasePathImage";
 
 interface ImageModalProps {
   imageSrc: string;
@@ -20,7 +20,7 @@ const ImageModal: React.FC<ImageModalProps> = ({ imageSrc, onClose }) => {
           />
           {/* Close Button */}
           <button
-            className="-translate-y-10 text-white text-3xl font-bold hover:text-primary-400 transition"
+            className="-translate-y-10 text-white text-3xl font-bold hover:text-secondary-400 transition"
             onClick={onClose}
             aria-label="Close"
           >

@@ -29,23 +29,23 @@ const ProjectNavigationPane: React.FC<ProjectNavigationPaneProps> = ({
             onClick={() => onProjectClick(project)}
           >
             {index === 0 && (
-              <div className="absolute bottom-0 left-0 h-1/2 border-2 w-0 border-secondary-900"></div>
+              <div className="absolute bottom-0 left-0 h-1/2 border-2 w-0 border-secondary-600"></div>
             )}
             {index === projects.length - 1 && (
-              <div className="absolute top-0 left-0 h-1/2 border-2 w-0 border-secondary-900"></div>
+              <div className="absolute top-0 left-0 h-1/2 border-2 w-0 border-secondary-600"></div>
             )}
             {index > 0 && index < projects.length - 1 && (
-              <div className="absolute top-0 left-0 h-full border-2 w-0 border-secondary-900"></div>
+              <div className="absolute top-0 left-0 h-full border-2 w-0 border-secondary-600"></div>
             )}
             {activeIndex === index ? (
               <div className="h-6 overflow-visible">
-                <div className="absolute flex items-center justify-center z-20 bg-secondary-100 -translate-x-1/2 left-0.5 w-6 h-6 border-4 border-secondary-900 rounded-full">
-                  <div className="bg-secondary-900 w-2 h-2 rounded-full"></div>
+                <div className="absolute flex items-center justify-center z-20 bg-secondary-100 -translate-x-1/2 left-0.5 w-6 h-6 border-4 rotate-12 border-secondary-600">
+                  {/* <div className="bg-secondary-600 w-2 h-2 rounded-full"></div> */}
                 </div>
               </div>
             ) : (
               <div className="h-4 overflow-visible">
-                <div className="absolute z-10 bg-secondary-100 -translate-x-1/2 left-0.5 w-4 h-4 border-4 border-secondary-900 rounded-full"></div>
+                <div className="absolute z-10 bg-secondary-100 -translate-x-1/2 left-0.5 w-4 h-4 border-4 border-secondary-600 rounded-full"></div>
               </div>
             )}
             <h3 className="">{project.title}</h3>

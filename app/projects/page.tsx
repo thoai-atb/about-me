@@ -1,6 +1,6 @@
 "use client";
 import Navigation from "../components/Navigation";
-import ImageModal from "../components/ImageModal";
+import ImageModal from "./components/ImageModal";
 import { useRef, useState, useEffect } from "react";
 import { ProjectItem } from "./projectItem";
 import projectData from "./projectData";
@@ -62,7 +62,7 @@ export default function Projects() {
         </div>
       </div>
       <div>
-        <div className="flex items-start gap-8">
+        <div className="flex items-start gap-8 2xl:gap-16">
           <ProjectNavigationPane
             projects={projectData}
             activeIndex={activeIndex} // Pass active index
@@ -74,7 +74,7 @@ export default function Projects() {
             }}
           />
 
-          <div className="max-w-screen-md xl:max-w-screen-lg mx-auto">
+          <div className="max-w-screen-md 2xl:max-w-screen-lg">
             {projectData.map((project: ProjectItem, index) => (
               <ProjectBlog
                 key={project.title}

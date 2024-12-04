@@ -7,7 +7,7 @@ import WorkSection from "./components/WorkSection";
 
 export default function Home() {
   return (
-    <div className="min-h-screen text-gray-900 font-sans">
+    <div className="min-h-screen text-gray-900 font-sans bg-white">
       {/* Navigation Bar */}
       <Navigation />
 
@@ -95,7 +95,7 @@ export default function Home() {
       {/* Education Section */}
       <Section
         title="Education"
-        className="flex-1 bg-primary-100 duration-3000"
+        className="flex-1 bg-primary-100 max-w-screen-lg mx-auto duration-3000"
         contentClassName="text-center flex justify-center"
       >
         <div className="max-w-screen-md flex flex-col md:flex-row items-center gap-10 w-full text-lg">

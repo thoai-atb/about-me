@@ -3,7 +3,7 @@ import { ProjectItem } from "../projectItem";
 const projectItem: ProjectItem = {
   title: "Rubik's Cube OLL Distribution",
   description:
-    "Calculate how likely we see an OLL case when solving a Rubik's cube using CFOP method.",
+    "I can solve a Rubiks cube less than 20 seconds, but one thing I still wonder is that, \"How often will the case with checker board pattern appear?\". So I made this program to calculate how likely we see OLL cases when solving a Rubik's cube using the CFOP method.",
   labels: ["simulation"],
   highlights: [
     "Simulate all 57 OLL cases by random turnings",

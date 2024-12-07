@@ -2,7 +2,7 @@ import { ProjectItem } from "../projectItem";
 
 const projectItem: ProjectItem = {
   title: "Multiplayer Poker",
-  description: "A Multiplayer Poker game - Texas holdem",
+  description: "I am a fan of Poker and I play it with my friends and family. One day, I decided to code the Poker game web-based, and I did. Now my friends and I often enjoy it over the VLAN network.",
   labels: ["game"],
   highlights: [
     "Support in-game chat",

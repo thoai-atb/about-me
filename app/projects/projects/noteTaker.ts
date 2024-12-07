@@ -3,7 +3,7 @@ import { ProjectItem } from "../projectItem";
 const projectItem: ProjectItem = {
   title: "AI Note Taker",
   description:
-    'An AI assistant named "Note Taker" that takes notes as you chat, that information later can be asked and retrieved to help developers in a team to look up quickly.',
+    'Do you want to have an assistance that knows about you, the links you usually access, the commands you usually run, and the solutions to specific known problems that happens once in a while? Behold, this Note Taker is what I made, using OpenAI API, it will take notes as you chat that later can be retrieved as you ask.',
   labels: ["AI", "tool"],
   highlights: [
     "Multiple users with shared database",

@@ -32,12 +32,16 @@ export default function Home() {
           contentClassName="text-xl"
         >
           I am a passionate Software Developer and DevOps with{" "}
-          <strong>2+ years of working experience</strong> in designing, developing, and
-          deploying software, along with <strong>abundant projects</strong> that I
-          did by myself. I can <i>proficiently use</i> programming languages
-          such as <strong>Python, JavaScript, Java</strong> and other development tools, covering different
-          domains like <strong>Front-End, Back-End, and DevOps</strong>. To expand my expertise, I am
-          now learning and doing projects that uses <i>LLMs</i>,
+          <strong>2+ years of working experience</strong> in designing,
+          developing, and deploying software, along with{" "}
+          <a className="font-bold text-primary-700 hover:text-primary-500" href={process.env.NEXT_PUBLIC_BASE_PATH + "/projects"}>
+            abundant projects
+          </a>{" "}
+          that I did by myself. I can <i>proficiently use</i> programming
+          languages such as <strong>Python, JavaScript, Java</strong> and other
+          development tools, covering different domains like{" "}
+          <strong>Front-End, Back-End, and DevOps</strong>. To expand my
+          expertise, I am now learning and doing projects that uses <i>LLMs</i>,
           specifically <i>OpenAI API</i>.
         </Section>
       </div>

@@ -6,6 +6,7 @@ import ollDistribution from "./projects/ollDistribution";
 import studentSystem from "./projects/studentSystem";
 import javascriptCompiler from "./projects/javascriptCompiler";
 import portfolioWebsite from "./projects/portfolioWebsite";
+import scheduler from "./projects/scheduler";
 
 const projects: ProjectItem[] = [
   portfolioWebsite,
@@ -15,6 +16,7 @@ const projects: ProjectItem[] = [
   studentSystem,
   ollDistribution,
   javascriptCompiler,
+  scheduler,
 ];
 
 export default projects;

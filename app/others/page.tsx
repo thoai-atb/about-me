@@ -7,31 +7,38 @@ import { Item } from "./components/ItemCard";
 const items: Item[] = [
   {
     title: "Coding",
-    description: "Creating software solutions and building cool projects.",
-    highlights: ["Develop Web Applications, Games, Tools", "Problem-solving", "Learning new technologies"],
+    description: "I must code more, I must make more stuff",
+    highlights: ["I usually create web app, games and tools", "I learn new technologies as I build projects"],
     imageSrc: "/hobby_code.jpg",
     imageAlt: "Coding hobby",
   },
   {
-    title: "Rubik's Cube",
-    description: "Solving puzzles and learn cube theory.",
-    highlights: ["Speed-cubing", "3x3 4x4 5x5 2x2 Megaminx", "Cube theory (conjugates & commutators)"],
-    imageSrc: "/hobby_cube.jpg",
-    imageAlt: "Rubik's Cube hobby",
-  },
-  {
     title: "Piano",
-    description: "Expressing creativity and emotions through music.",
-    highlights: ["Classical music", "Improvisation", "Music theory (chords, scales)"],
+    description: "Yes, I also play piano, I'm a fan of Chopin",
+    highlights: ["Waltz in C# minor, Minute Waltz, Nocturne Op 9 No 2", "I learn to improvise in 12 scales in the piano"],
     imageSrc: "/hobby_piano.jpg",
     imageAlt: "Piano hobby",
   },
   {
     title: "Ping Pong",
-    description: "Afterwork exercise and bonding with team",
-    highlights: ["Friendly matches", "Ping pong spin theory", "Bun cha sa doa"],
+    description: "You can play ping pong with me sometime!",
+    highlights: ["I can chop your top and loop your back, let's play!", "My colleagues often call it a \"sa doa\" session when it's time to play"],
     imageSrc: "/hobby_pingpong.jpg",
     imageAlt: "Ping Pong hobby",
+  },
+  {
+    title: "Reading",
+    description: "I like reading books, mostly psychology books",
+    highlights: ["I read psychology topics around communication, money and thinking", "I like to download and read ebook (PDFs)"],
+    imageSrc: "/hobby_books.jpg",
+    imageAlt: "Reading hobby",
+  },
+  {
+    title: "Cubing",
+    description: "I learned how to solve a Rubik's cube when I studied in high school, it's fun",
+    highlights: ["I can do 3x3, 4x4, 5x5, 2x2, Megaminx", "They're also a decorative objects on my desk"],
+    imageSrc: "/hobby_cube.jpg",
+    imageAlt: "Rubik's Cube hobby",
   },
 ];
 

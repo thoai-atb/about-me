@@ -7,6 +7,7 @@ import studentSystem from "./projects/studentSystem";
 import javascriptCompiler from "./projects/javascriptCompiler";
 import portfolioWebsite from "./projects/portfolioWebsite";
 import scheduler from "./projects/scheduler";
+import commandRunner from "./projects/commandRunner";
 
 const projects: ProjectItem[] = [
   portfolioWebsite,
@@ -17,6 +18,7 @@ const projects: ProjectItem[] = [
   ollDistribution,
   javascriptCompiler,
   scheduler,
+  commandRunner,
 ];
 
 export default projects;

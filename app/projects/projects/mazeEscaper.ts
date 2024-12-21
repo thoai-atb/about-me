@@ -3,7 +3,7 @@ import { ProjectItem } from "../projectItem";
 const projectItem: ProjectItem = {
   title: "Maze Escaper",
   description:
-    "Have you ever played a computer maze game where you can't see the whole map? This is it, you can only see the paths from where you're standing. Get the key and escape the maze, but becareful, there will be ghosts.",
+    "Have you ever played a computer maze game where you can't see the whole map? This is it, you can only see the paths from where you're standing. Get the key and escape the maze, but be careful, there will be ghosts.",
   labels: ["game"],
   highlights: [
     "Random maze generation that is different everytime",

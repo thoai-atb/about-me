@@ -15,16 +15,23 @@ const items: Item[] = [
   {
     title: "Piano",
     description: "Yes, I also play piano, I'm a fan of Chopin",
-    highlights: ["Waltz in C# minor, Minute Waltz, Nocturne Op 9 No 2", "I learn to improvise in 12 scales in the piano"],
+    highlights: ["Waltz in C# minor, Minute Waltz, Nocturne Op 9 No 2", "I'm practicing to improvise in 12 scales in the piano"],
     imageSrc: "/hobby_piano.jpg",
     imageAlt: "Piano hobby",
   },
   {
     title: "Ping Pong",
     description: "You can play ping pong with me sometime!",
-    highlights: ["I can chop your top and loop your back, let's play!", "My colleagues often call it a \"sa doa\" session when it's time to play"],
+    highlights: ["I can do top spin and chopping, let's play!", "My colleagues often call it a \"sa doa\" session when it's time to play"],
     imageSrc: "/hobby_pingpong.jpg",
     imageAlt: "Ping Pong hobby",
+  },
+  {
+    title: "Guitar",
+    description: "I also play guitar, both chords and solo",
+    highlights: ["I'm a fan of Francisso Tarrega, very Spanish and classical", "I no longer practicing guitar though, it's my past hobby"],
+    imageSrc: "/hobby_guitar.jpg",
+    imageAlt: "Guitar hobby",
   },
   {
     title: "Reading",

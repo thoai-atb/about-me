@@ -1,3 +1,4 @@
+import { Technology } from "../components/TechnologyIcon";
 import { ProjectItem } from "../projectItem";
 
 const projectItem: ProjectItem = {
@@ -17,7 +18,7 @@ const projectItem: ProjectItem = {
   ],
   timeline: "January 2019",
   effort: "~2 weeks",
-  technologies: ["P5JS", "JavaScript"],
+  technologies: [Technology.JavaScript, Technology.P5JS],
   imageSrc: "/maze_escaper.png",
   imageAlt: "Screenshot of 4 players, after killing all ghosts, trying to escape the maze",
 };

@@ -1,3 +1,4 @@
+import { Technology } from "../components/TechnologyIcon";
 import { ProjectItem } from "../projectItem";
 
 const projectItem: ProjectItem = {
@@ -13,7 +14,7 @@ const projectItem: ProjectItem = {
   ],
   timeline: "November 2024",
   effort: "~1 Month",
-  technologies: ["OpenAI API", "MongoDB", "NodeJS", "SocketIO", "ReactJS"],
+  technologies: [Technology.OpenAI, Technology.NodeJS, Technology.SocketIO, Technology.React, Technology.MongoDB],
   imageSrc: "/note_taker.png",
   imageAlt:
     'Questions about retrospective link, internal command posed to the AI Note Taker and its response',

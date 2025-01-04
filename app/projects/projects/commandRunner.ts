@@ -1,3 +1,4 @@
+import { Technology } from "../components/TechnologyIcon";
 import { ProjectItem } from "../projectItem";
 
 const projectItem: ProjectItem = {
@@ -12,7 +13,7 @@ const projectItem: ProjectItem = {
   ],
   timeline: "November 2024",
   effort: "< 1 day",
-  technologies: ["OpenAI", "NodeJS"],
+  technologies: [Technology.OpenAI, Technology.NodeJS],
   imageSrc: "/command_runner.png",
   imageAlt:
     "Screenshot of \"Slave\", generating and executing command to clean docker volume on multiple remote hosts",

@@ -1,3 +1,4 @@
+import { Technology } from "../components/TechnologyIcon";
 import { ProjectItem } from "../projectItem";
 
 const projectItem: ProjectItem = {
@@ -14,7 +15,7 @@ const projectItem: ProjectItem = {
   ],
   timeline: "February 2022",
   effort: "> 2 Months",
-  technologies: ["NodeJS", "SocketIO", "ReactJS"],
+  technologies: [Technology.NodeJS, Technology.SocketIO, Technology.React, Technology.TailwindCSS],
   imageSrc: "/texas_holdem.png",
   imageAlt: "Screenshot during the game, 1 player and 8 bots, current turn belongs to the player and player is selecting the bet size",
 };

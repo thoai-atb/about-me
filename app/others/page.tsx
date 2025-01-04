@@ -22,7 +22,7 @@ const items: Item[] = [
   {
     title: "Ping Pong",
     description: "You can play ping pong with me sometime!",
-    highlights: ["I can do top spin and chopping, let's play!", "My colleagues often call it a \"sa doa\" session when it's time to play"],
+    highlights: ["I can do top spin and chopping, let's play!", "I play with my colleages after work"],
     imageSrc: "/hobby_pingpong.jpg",
     imageAlt: "Ping Pong hobby",
   },
@@ -55,8 +55,9 @@ export default function Others() {
       <Navigation />
       <div className="flex justify-center">
         <div className="bg-tertiary-400 rounded-full mx-8 mb-8 text-tertiary-900 text-4xl font-thin text-center px-20 py-4 slide-in-from-right-10 duration-1000 animate-in">
-          <span>These are my </span>
-          <span className="text-white">Hobbies</span>
+          <span>Other </span>
+          <span className="text-white">things</span>
+          <span> that I do</span>
         </div>
       </div>
       <div className="bg-white">

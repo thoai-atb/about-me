@@ -74,7 +74,7 @@ export default function Projects() {
             }}
           />
 
-          <div className="max-w-screen-md 2xl:max-w-screen-lg">
+          <div className="mx-auto xl:mx-0 max-w-screen-md 2xl:max-w-screen-lg">
             {projectData.map((project: ProjectItem, index) => (
               <ProjectBlog
                 key={project.title}

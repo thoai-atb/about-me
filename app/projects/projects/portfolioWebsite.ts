@@ -1,3 +1,4 @@
+import { Technology } from "../components/TechnologyIcon";
 import { ProjectItem } from "../projectItem";
 
 const projectItem: ProjectItem = {
@@ -12,7 +13,7 @@ const projectItem: ProjectItem = {
   ],
   timeline: "November - December 2024",
   effort: "~1 Month",
-  technologies: ["NextJS", "TailwindCSS"],
+  technologies: [Technology.NextJS, Technology.React, Technology.TailwindCSS],
   imageSrc: "/portfolio_website.png",
   imageAlt:
     'The Portfolio Website on home page showing my skills and experience',

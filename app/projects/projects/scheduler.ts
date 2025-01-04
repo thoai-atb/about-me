@@ -1,3 +1,4 @@
+import { Technology } from "../components/TechnologyIcon";
 import { ProjectItem } from "../projectItem";
 
 const projectItem: ProjectItem = {
@@ -12,7 +13,7 @@ const projectItem: ProjectItem = {
   ],
   timeline: "April - July 2021",
   effort: "~ 1 Month",
-  technologies: ["Java", "Swing", "SQLite"],
+  technologies: [Technology.Java, Technology.Swing, Technology.SQLite],
   imageSrc: "/scheduler.png",
   imageAlt: "Screenshot of the Scheduler, above shows the main GUI for managing subjects, classes, time tables, and below shows the generated timetables",
 };

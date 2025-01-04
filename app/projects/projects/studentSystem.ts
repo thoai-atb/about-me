@@ -1,3 +1,4 @@
+import { Technology } from "../components/TechnologyIcon";
 import { ProjectItem } from "../projectItem";
 
 const projectItem: ProjectItem = {
@@ -12,7 +13,7 @@ const projectItem: ProjectItem = {
   ],
   timeline: "January - July 2022",
   effort: "> 2 months",
-  technologies: ["Kafka", "Java", "NodeJS", "ReactJS"],
+  technologies: [Technology.Kafka, Technology.Java, Technology.NodeJS, Technology.React],
   imageSrc: "/student_learning_progress.png",
   imageAlt:
     "A diagram that shows how all the Student System microservices working together with Kafka queues",

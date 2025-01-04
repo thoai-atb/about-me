@@ -1,3 +1,4 @@
+import { Technology } from "../components/TechnologyIcon";
 import { ProjectItem } from "../projectItem";
 
 const projectItem: ProjectItem = {
@@ -12,7 +13,7 @@ const projectItem: ProjectItem = {
   ],
   timeline: "April - July 2021",
   effort: "> 2 Months",
-  technologies: ["Python"],
+  technologies: [Technology.Python],
   imageSrc: "/javascript_compiler.png",
   imageAlt: "Demo example of a JavaScript factorial function being parsed, with detail log of tokens, syntax tree, and execution",
 };

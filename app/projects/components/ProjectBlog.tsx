@@ -1,6 +1,7 @@
 import React, { forwardRef } from "react";
 import { ProjectItem } from "../projectItem";
 import BasePathImage from "@/app/components/BasePathImage";
+import TechnologyIcon, { Technology } from "./TechnologyIcon";
 
 interface ProjectBlogProps {
   project: ProjectItem;
@@ -51,10 +52,19 @@ const ProjectBlog = forwardRef<HTMLDivElement | null, ProjectBlogProps>(
           )}
 
           {project.technologies && project.technologies.length > 0 && (
-            <p className="text-secondary-600 mb-4">
-              <strong className="text-secondary-900">Technologies:</strong>{" "}
-              {project.technologies.join(", ")}
-            </p>
+            <div className="mb-4 flex items-center">
+              <strong className="text-secondary-900 mr-2">Technologies:</strong>{" "}
+              {project.technologies.map((tech, index) => (
+                // icon with technology name
+                <div key={index} className="text-secondary-600 hover:text-secondary-300 cursor-default duration-300 flex items-center justify-center px-1 gap-1">
+                  <TechnologyIcon tech={tech as Technology} />
+                  {tech}
+                  <span className="text-black">
+                    {index < project.technologies.length - 1 && ","}
+                    </span>
+                </div>
+              ))}
+            </div>
           )}
           <div className="flex justify-between">
             <p className="mb-4">

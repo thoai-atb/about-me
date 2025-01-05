@@ -12,6 +12,7 @@ const projectItem: ProjectItem = {
   ],
   effort: "< 1 day",
   timeline: "July 2022",
+  timestamp: new Date("2022-07-01").getTime(),
   technologies: [Technology.Python],
   imageSrc: "/oll_distribution.png",
   imageAlt:

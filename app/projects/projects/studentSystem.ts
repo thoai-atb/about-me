@@ -12,6 +12,7 @@ const projectItem: ProjectItem = {
     "A design for error handling mechanism",
   ],
   timeline: "January - July 2022",
+  timestamp: new Date("2022-07-01").getTime(),
   effort: "> 2 months",
   technologies: [Technology.Kafka, Technology.Java, Technology.NodeJS, Technology.React],
   imageSrc: "/student_learning_progress.png",

@@ -12,6 +12,7 @@ const projectItem: ProjectItem = {
     "An SQL tab to perform SQL queries from SQLite database for debug/troubleshoot purpose"
   ],
   timeline: "April - July 2021",
+  timestamp: new Date("2021-07-01").getTime(),
   effort: "~ 1 Month",
   technologies: [Technology.Java, Technology.Swing, Technology.SQLite],
   imageSrc: "/scheduler.png",

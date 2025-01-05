@@ -6,7 +6,7 @@ const WorkSection: React.FC = () => {
     {
       companyLogo: "/endava_logo.png",
       companyName: "DEK - Endava",
-      jobTitle: "DevOps Engineer",
+      jobTitle: "Software Engineer",
       project: "IMS Network Function Test",
       projectDescription:
         "A comprehensive testing framework for IMS (IP Multimedia Subsystem) Network Function Testing, designed to assist telecom companies in developing and validating IMS deployments. This framework enables the creation of test cases for critical protocols such as SIP (Session Initiation Protocol) and Diameter, to verify IMS functionality. By simulating message flows and interactions, it ensures reliable performance during development and release cycles.",
@@ -17,15 +17,15 @@ const WorkSection: React.FC = () => {
         "Support customers in troubleshooting configuration and deployment",
         "Discuss about requirements detail, feature design and implementation",
         "Perform code-reviewing and testing for product's new functionality",
-        "Write product documentation for new features, present in sprint review, quarter release",
+        "Write product documentation for new features, demo in sprint review, quarter release",
         "Perform security scans and address security issues for each release",
         "Collaborating and communicating in an English environment",
       ],
       achievements: [
         "Migrated product from Docker to Kubernetes platform",
         "Wrote automated scripts that saved 52 man-hour manual work per year",
-        "Demo working product to potential customer",
-        "Host sharing sessions internally for new technologies for team",
+        "Showcase working product to potential customer",
+        "Hosts sessions internally to share new technologies to team",
       ],
       period: "Sep 2022 - Present",
     },

@@ -18,6 +18,10 @@ export enum Technology {
   P5JS = "P5JS",
   SocketIO = "Socket.IO",
   OpenAI = "OpenAI API",
+  PHP = "PHP",
+  MySQL = "MySQL",
+  HTML = "HTML",
+  CSS = "CSS",
 }
 
 // TechnologyIcon Component
@@ -43,6 +47,10 @@ const TechnologyIcon: React.FC<TechnologyIconProps> = ({ tech }) => {
     [Technology.P5JS]: "/icons/p5js.png",
     [Technology.SocketIO]: "/icons/socketio.png",
     [Technology.OpenAI]: "/icons/chatgpt.svg",
+    [Technology.PHP]: "/icons/php.png",
+    [Technology.MySQL]: "/icons/mysql.svg",
+    [Technology.HTML]: "/icons/html.svg",
+    [Technology.CSS]: "/icons/css.svg",
   };
 
   return (

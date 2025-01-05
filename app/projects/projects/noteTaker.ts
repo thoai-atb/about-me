@@ -13,6 +13,7 @@ const projectItem: ProjectItem = {
     'It can also be considered as a local "Stack Overflow" in the team, as it can note down common errors and solutions',
   ],
   timeline: "November 2024",
+  timestamp: new Date("2024-11-01").getTime(),
   effort: "~1 Month",
   technologies: [Technology.OpenAI, Technology.NodeJS, Technology.SocketIO, Technology.React, Technology.MongoDB],
   imageSrc: "/note_taker.png",

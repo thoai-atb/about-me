@@ -14,6 +14,7 @@ const projectItem: ProjectItem = {
     "When a player is broke (out of money), they need to \"work\" by clicking on a red button with chance to get cash",
   ],
   timeline: "February 2022",
+  timestamp: new Date("2022-02-01").getTime(),
   effort: "> 2 Months",
   technologies: [Technology.NodeJS, Technology.SocketIO, Technology.React, Technology.TailwindCSS],
   imageSrc: "/texas_holdem.png",

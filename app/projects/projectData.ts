@@ -8,6 +8,7 @@ import javascriptCompiler from "./projects/javascriptCompiler";
 import portfolioWebsite from "./projects/portfolioWebsite";
 import scheduler from "./projects/scheduler";
 import commandRunner from "./projects/commandRunner";
+import railway from "./projects/railway";
 
 const projects: ProjectItem[] = [
   portfolioWebsite,
@@ -19,6 +20,7 @@ const projects: ProjectItem[] = [
   javascriptCompiler,
   scheduler,
   commandRunner,
+  railway,
 ];
 
 export default projects;

@@ -12,6 +12,7 @@ const projectItem: ProjectItem = {
     "Can read command output and suggest alternative solution if the command failed",
   ],
   timeline: "November 2024",
+  timestamp: new Date("2024-11-01").getTime(),
   effort: "< 1 day",
   technologies: [Technology.OpenAI, Technology.NodeJS],
   imageSrc: "/command_runner.png",

@@ -58,7 +58,7 @@ export default function Projects() {
       <div className="flex justify-center">
         <div className="bg-secondary-400 w-full rounded-full mx-8 mb-8 text-secondary-900 text-4xl font-thin text-center px-20 py-4 slide-in-from-right-10 duration-1000 animate-in">
           <span>Welcome to my </span>
-          <span className="text-white">Projects</span>
+          <span className="text-white">Personal Projects</span>
         </div>
       </div>
       <div>
@@ -75,16 +75,19 @@ export default function Projects() {
           />
 
           <div className="mx-auto xl:mx-0 max-w-screen-md 2xl:max-w-screen-lg">
-            {projectData.map((project: ProjectItem, index) => (
-              <ProjectBlog
-                key={project.title}
-                ref={(el) => {
-                  sectionRefs.current[index] = el;
-                }}
-                project={project}
-                onImageClick={() => setImageSrc(project.imageSrc)}
-              />
-            ))}
+            {/* sort project data by timestamp */}
+            {projectData
+              .sort((a, b) => b.timestamp - a.timestamp)
+              .map((project: ProjectItem, index) => (
+                <ProjectBlog
+                  key={project.title}
+                  ref={(el) => {
+                    sectionRefs.current[index] = el;
+                  }}
+                  project={project}
+                  onImageClick={() => setImageSrc(project.imageSrc)}
+                />
+              ))}
           </div>
         </div>
 

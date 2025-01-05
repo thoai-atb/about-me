@@ -17,6 +17,7 @@ const projectItem: ProjectItem = {
     "Support portals that players and ghosts can teleport to different location",
   ],
   timeline: "January 2019",
+  timestamp: new Date("2019-01-01").getTime(),
   effort: "~2 weeks",
   technologies: [Technology.JavaScript, Technology.P5JS],
   imageSrc: "/maze_escaper.png",

@@ -12,6 +12,7 @@ const projectItem: ProjectItem = {
     "Provides a detail log of tokens, AST, symbol table and step-by-step code execution process",
   ],
   timeline: "April - July 2021",
+  timestamp: new Date("2021-07-01").getTime(),
   effort: "> 2 Months",
   technologies: [Technology.Python],
   imageSrc: "/javascript_compiler.png",

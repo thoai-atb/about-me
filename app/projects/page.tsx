@@ -77,7 +77,7 @@ export default function Projects() {
           <div className="mx-auto xl:mx-0 max-w-screen-md 2xl:max-w-screen-lg">
             {/* sort project data by timestamp */}
             {projectData
-              .sort((a, b) => b.timestamp - a.timestamp)
+              .sort((a, b) => b.rating - a.rating)
               .map((project: ProjectItem, index) => (
                 <ProjectBlog
                   key={project.title}

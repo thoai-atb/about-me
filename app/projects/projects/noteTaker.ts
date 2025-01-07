@@ -4,7 +4,8 @@ import { ProjectItem } from "../projectItem";
 const projectItem: ProjectItem = {
   title: "AI Note Taker",
   description:
-    'Do you want to have a chat bot that knows about you, the internal links, internal commands you usually run? This is Note Taker, I made it using OpenAI API, it can take notes as you chat that later can be retrieved as you ask.',
+    "Do you want to have a chat bot that knows about you, the internal links, internal commands you usually run? This is Note Taker, I made it using OpenAI API, it can take notes as you chat that later can be retrieved as you ask.",
+  rating: 4.0,
   labels: ["AI", "tool"],
   highlights: [
     "Multiple users with shared database",
@@ -15,10 +16,16 @@ const projectItem: ProjectItem = {
   timeline: "November 2024",
   timestamp: new Date("2024-11-01").getTime(),
   effort: "~1 Month",
-  technologies: [Technology.OpenAI, Technology.NodeJS, Technology.SocketIO, Technology.React, Technology.MongoDB],
+  technologies: [
+    Technology.OpenAI,
+    Technology.NodeJS,
+    Technology.SocketIO,
+    Technology.React,
+    Technology.MongoDB,
+  ],
   imageSrc: "/note_taker.png",
   imageAlt:
-    'Questions about retrospective link, internal command posed to the AI Note Taker and its response',
+    "Questions about retrospective link, internal command posed to the AI Note Taker and its response",
 };
 
 export default projectItem;

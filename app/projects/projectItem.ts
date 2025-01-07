@@ -1,6 +1,7 @@
 export interface ProjectItem {
   title: string;
   description: string;
+  rating: number;
   labels: string[];
   highlights: string[];
   timeline: string;

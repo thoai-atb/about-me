@@ -4,6 +4,7 @@ import { ProjectItem } from "../projectItem";
 const projectItem: ProjectItem = {
   title: "Uni Course Arrangement App",
   description: "Back when I study in university, it was a real challenge to find a way to fit all the courses I need for the coming semester. So I made this, Scheduler, a Java GUI application that helps students find a good combination of classes to register.",
+  rating: 4.0,
   labels: ["tool"],
   highlights: [
     "Classes can be created with day and time, categorized by subjects",

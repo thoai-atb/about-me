@@ -4,7 +4,8 @@ import { ProjectItem } from "../projectItem";
 const projectItem: ProjectItem = {
   title: "Portfolio Website",
   description:
-    'This is the site that you are reading, it is my personal portfolio website to show case my skills and projects that I did.',
+    "This is the site that you are reading, it is my personal portfolio website to show case my skills and projects that I did.",
+  rating: 4.0,
   labels: ["website"],
   highlights: [
     "The 1st Profile page with my skills and experience",
@@ -17,7 +18,7 @@ const projectItem: ProjectItem = {
   technologies: [Technology.NextJS, Technology.React, Technology.TailwindCSS],
   imageSrc: "/portfolio_website.png",
   imageAlt:
-    'The Portfolio Website on home page showing my skills and experience',
+    "The Portfolio Website on home page showing my skills and experience",
 };
 
 export default projectItem;

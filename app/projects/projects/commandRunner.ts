@@ -5,6 +5,7 @@ const projectItem: ProjectItem = {
   title: "Command Runner (Slave)",
   description:
     "This is the command runner, I call it \"Slave\" as it will generate and run the commands to do the task that I request it to do. This is my first project that uses generative AI.",
+  rating: 3,
   labels: ["tool", "AI"],
   highlights: [
     "Generate and run commands on Linux machine",

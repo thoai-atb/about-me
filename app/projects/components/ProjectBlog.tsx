@@ -2,6 +2,7 @@ import React, { forwardRef } from "react";
 import { ProjectItem } from "../projectItem";
 import BasePathImage from "@/app/components/BasePathImage";
 import TechnologyIcon, { Technology } from "./TechnologyIcon";
+import StarRating from "./StarRating";
 
 interface ProjectBlogProps {
   project: ProjectItem;
@@ -55,13 +56,15 @@ const ProjectBlog = forwardRef<HTMLDivElement | null, ProjectBlogProps>(
             <div className="mb-4 flex items-center">
               <strong className="text-secondary-900 mr-2">Technologies:</strong>{" "}
               {project.technologies.map((tech, index) => (
-                // icon with technology name
-                <div key={index} className="text-secondary-600 hover:text-secondary-300 cursor-default duration-300 flex items-center justify-center px-1 gap-1">
+                <div
+                  key={index}
+                  className="text-secondary-600 hover:text-secondary-300 cursor-default duration-300 flex items-center justify-center px-1 gap-1"
+                >
                   <TechnologyIcon tech={tech as Technology} />
                   {tech}
                   <span className="text-black">
                     {index < project.technologies.length - 1 && ","}
-                    </span>
+                  </span>
                 </div>
               ))}
             </div>
@@ -71,6 +74,15 @@ const ProjectBlog = forwardRef<HTMLDivElement | null, ProjectBlogProps>(
               <strong className="text-secondary-900">Effort: </strong>
               {project.effort}
             </p>
+            <div>
+              {project.rating > 0 && (
+                <div className="flex items-center">
+                  <strong className="text-secondary-900 mr-2">How much I like this:</strong>
+                  <StarRating rating={project.rating} />
+                  <div className="mx-2">({project.rating.toFixed(1)})</div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
         <div className="w-full flex justify-center">

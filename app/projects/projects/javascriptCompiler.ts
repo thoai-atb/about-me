@@ -4,6 +4,7 @@ import { ProjectItem } from "../projectItem";
 const projectItem: ProjectItem = {
   title: "JavaScript Compiler",
   description: "This is a Python program to compile and execute a raw JavaScript file, using Abstract Syntax Tree (ATS)",
+  rating: 3.5,
   labels: ["simulation", "university project"],
   highlights: [
     "Extracts tokens or \"keywords\" from the provided JavaScript file",

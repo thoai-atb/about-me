@@ -5,6 +5,7 @@ const projectItem: ProjectItem = {
   title: "Railway Management System",
   description:
     "This is the project from my university, I collaborated with my 2 other friends, it is used to manage the railway system, including the schedule and ticket booking. I did the front-end, map, trains, stations, schedules generation, implement route finding algorithm. My friends did the back-end, database, music, and admin page.",
+  rating: 3.5,
   labels: ["website", "university project"],
   highlights: [
     "A page for users to search for the trains’ schedules, stations with a live map",

@@ -71,12 +71,9 @@ export default function Home() {
             </p>
             <a
               href={process.env.NEXT_PUBLIC_BASE_PATH + "/projects"}
-              className="mt-4 p-2 px-4 group hover:pr-6 rounded-3xl transition-all inline-block bg-primary-500 text-white font-semibold hover:translate-x-2 duration-300"
+              className="mt-4 p-2 px-4 group rounded-3xl transition-all inline-block bg-primary-500 text-white font-semibold hover:translate-x-2 duration-300"
             >
-              View My Projects{" "}
-              <span className="transition-all duration-500 group-hover:ml-4">
-                →
-              </span>
+              View My Projects →
             </a>
           </Section>
         </div>

@@ -5,7 +5,7 @@ const projectItem: ProjectItem = {
   title: "JavaScript Compiler",
   description: "This is a Python program to compile and execute a raw JavaScript file, using Abstract Syntax Tree (ATS)",
   rating: 3.5,
-  labels: ["simulation", "university project"],
+  labels: ["simulation", "university"],
   highlights: [
     "Extracts tokens or \"keywords\" from the provided JavaScript file",
     "Builds an abstract syntax tree from the list of tokens",

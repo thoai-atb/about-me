@@ -6,7 +6,7 @@ const projectItem: ProjectItem = {
   description:
     "This is my university thesis, it is an event-driven architecture applying the \"Mediator\" design pattern aims to manage student learning progress (in stages) in universities, including multiple microservices and website for management",
   rating: 3.5,
-  labels: ["system", "university project"],
+  labels: ["system", "university"],
   highlights: [
     "User interface for managing student progresses",
     "User interface for managing microservices",

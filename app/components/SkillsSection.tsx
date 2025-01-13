@@ -69,7 +69,7 @@ const SkillsSection = () => {
         />
         <SkillCell
           title="Soft Skills"
-          className="col-span-2"
+          className="md:col-span-2"
           skills={[
             "Use English everyday (IELTS 6.5)",
             "Independent researching and troubleshooting",

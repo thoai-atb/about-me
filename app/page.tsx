@@ -13,14 +13,14 @@ export default function Home() {
 
       {/* Hero Section */}
       <div className="flex bg-white pb-12 flex-col lg:flex-row">
-        <div className="flex-1 relative flex flex-col md:flex-row items-center p-12 bg-primary-400 shadow-lg rounded-r-lg lg:rounded-r-full slide-in-from-left-10 duration-1000 animate-in">
+        <div className="flex-1 relative flex flex-col md:flex-row items-center px-4 md:px-12 py-12 bg-primary-400 shadow-lg rounded-r-lg lg:rounded-r-full slide-in-from-left-10 duration-1000 animate-in">
           <BasePathImage
             className="rounded-full w-48 h-48 border-4 border-primary-600 shadow-xl"
             src={`/thoai.png`}
             alt="Thoai"
             priority
           />
-          <div className="text-center text-primary-900 text-4xl mt-6 md:mt-0 md:ml-8 leading-snug font-thin">
+          <div className="text-center text-primary-900 text-3xl md:text-4xl mt-6 md:mt-0 md:ml-8 leading-snug font-thin">
             Hi, I am <span className="text-white">Ly Bao Thoai</span>. <br />
             Software Developer & DevOps
           </div>
@@ -29,7 +29,7 @@ export default function Home() {
         <Section
           title="About Me"
           className="bg-white flex-1 duration-1000"
-          contentClassName="text-xl"
+          contentClassName="text-lg md:text-xl"
         >
           I am a passionate Software Developer and DevOps with{" "}
           <strong>2+ years of working experience</strong> in designing,
@@ -62,7 +62,7 @@ export default function Home() {
           <Section
             title="My Projects"
             className="xl:w-96 bg-white duration-2000"
-            contentClassName="text-lg text-left"
+            contentClassName="px-4 md:px-0 text-lg text-left"
           >
             <p className="text-gray-600">
               I have worked on a variety of exciting projects whenever an idea
@@ -101,7 +101,7 @@ export default function Home() {
         className="flex-1 bg-primary-100 max-w-screen-lg mx-auto duration-3000"
         contentClassName="text-center flex justify-center"
       >
-        <div className="max-w-screen-md flex flex-col md:flex-row items-center gap-10 w-full text-lg">
+        <div className="max-w-screen-md flex flex-col md:flex-row items-center gap-10 w-full text-base md:text-lg">
           <BasePathImage
             className="w-40 h-40"
             alt="HCMIU"

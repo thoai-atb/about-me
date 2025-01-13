@@ -48,22 +48,22 @@ const items: Item[] = [
     imageAlt: "Rubik's Cube hobby",
   },
   {
-    title: "L____ D_______",
+    title: "L____ ________",
     description: "This activity is a secret, I can't tell you what it is until we meet",
     highlights: ["???", "???"],
     imageSrc: "/hobby/halfmoon.jpg",
     imageAlt: "Half moon",
   },
   {
-    title: "M____",
-    description: "I’ll keep this activity a mystery; you'll find out soon.",
+    title: "____c",
+    description: "I’ll keep this activity a mystery, you'll find out soon.",
     highlights: ["???", "???"],
     imageSrc: "/hobby/hand.jpg",
     imageAlt: "Hand",
   },
   {
-    title: "__gg____",
-    description: "I can’t disclose what this activity is just yet, but you’ll know soon.",
+    title: "______ge",
+    description: "I can’t tell you what this activity is just yet, but you’ll know soon.",
     highlights: ["???", "???"],
     imageSrc: "/hobby/balls.jpg",
     imageAlt: "Rubik's Cube hobby",
@@ -75,7 +75,7 @@ export default function Others() {
     <div className="min-h-screen bg-white font-sans">
       <Navigation />
       <div className="flex justify-center">
-        <div className="bg-tertiary-400 rounded-full mx-8 mb-8 text-tertiary-900 text-4xl font-thin text-center px-20 py-4 slide-in-from-right-10 duration-1000 animate-in">
+        <div className="bg-tertiary-400 w-full md:w-auto rounded-l-lg md:rounded-full md:mx-8 mb-8 text-tertiary-900 text-4xl font-thin text-center px-4 md:px-20 py-4 slide-in-from-right-10 duration-1000 animate-in">
           <span>Other </span>
           <span className="text-white">things</span>
           <span> that I do</span>

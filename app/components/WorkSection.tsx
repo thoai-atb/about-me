@@ -52,7 +52,7 @@ const WorkSection: React.FC = () => {
       {workExperiences.map((work, index) => (
         <div
           key={index}
-          className="flex max-w-screen-xl w-full flex-col lg:flex-row gap-4 p-4 group"
+          className="flex max-w-screen-xl w-full flex-col items-center md:items-start lg:flex-row gap-4 py-4 group"
         >
           <BasePathImage
             src={work.companyLogo}
@@ -60,24 +60,24 @@ const WorkSection: React.FC = () => {
             className="w-52 h-52 bg-white shadow-xl p-4 rounded-lg object-contain transition-shadow duration-500 group-hover:shadow-2xl"
           />
           <div className="h-0 w-0 lg:h-40 lg:w-0 lg:m-6 lg:border-2 border-primary-400 slide-in-from-top-10 fade-in-0 duration-500 animate-in group-hover:scale-y-125" />
-          <div className="flex-1 text-left pl-10 text-lg bg-primary-100 p-4 duration-500">
+          <div className="flex-1 text-left p-4 pl-10 text-lg bg-primary-100 duration-500">
             <h3 className="text-xl font-semibold text-primary-600">
               {work.companyName}
             </h3>
             <div className="text-sm text-gray-500 mb-2">{work.period}</div>
-            <div className="text-gray-700 mb-4 text-lg">
+            <div className="text-gray-700 mb-4 text-base md:text-lg">
               <strong>As a: </strong>
               {work.jobTitle}
             </div>
-            <div className="text-gray-700 mb-4 text-lg">
+            <div className="text-gray-700 mb-4 text-base md:text-lg">
               <strong>Project: </strong>
               {work.project} - {work.projectDescription}
             </div>
-            <div className="text-gray-700 mb-4 text-lg">
+            <div className="text-gray-700 mb-4 text-base md:text-lg">
               <strong>Technologies: </strong>
               {work.technologies}
             </div>
-            <div className="text-gray-700 mb-4 text-lg">
+            <div className="text-gray-700 mb-4 text-base md:text-lg">
               <strong>Responsibilities</strong>
               <ul className="list-disc list-inside">
                 {work.responsibilities.map((item, id) => (
@@ -90,7 +90,7 @@ const WorkSection: React.FC = () => {
                 ))}
               </ul>
             </div>
-            <div className="text-gray-700 mb-4 text-lg">
+            <div className="text-gray-700 mb-4 text-base md:text-lg">
               <strong>Achievements</strong>
               <ul className="list-disc list-inside">
                 {work.achievements.map((item, id) => (

@@ -14,15 +14,15 @@ const ProjectBlog = forwardRef<HTMLDivElement | null, ProjectBlogProps>(
     return (
       <div
         ref={ref}
-        className="rounded-lg text-lg mb-12 animate-in fade-in-0 duration-1000"
+        className="rounded-lg text-base md:text-lg mb-12 animate-in fade-in-0 duration-1000"
       >
         <hr className="border-2 border-secondary-500 mb-12 mx-12"></hr>
         <div className=" bg-secondary-100 p-4 rounded mb-4">
           <div className="flex justify-between">
-            <h2 className="text-2xl font-semibold text-secondary-900 items-center">
+            <h2 className="text-xl md:text-2xl font-semibold text-secondary-900 items-center">
               {project.title}
             </h2>
-            <div className="flex gap-2">
+            <div className="hidden md:flex gap-2">
               {project.labels.map((label, index) => (
                 <div
                   className="bg-secondary-400 text-white px-4 py-2 rounded-lg italic duration-500 hover:bg-secondary-500"
@@ -34,7 +34,7 @@ const ProjectBlog = forwardRef<HTMLDivElement | null, ProjectBlogProps>(
               ))}
             </div>
           </div>
-          <p className="text-gray-900 text-md font-thin mb-2 -translate-y-2">
+          <p className="text-gray-900 text-sm md:text-md font-thin mb-2 md:-translate-y-2">
             {project.timeline}
           </p>
           <p className="text-gray-700 mb-4">{project.description}</p>
@@ -53,15 +53,17 @@ const ProjectBlog = forwardRef<HTMLDivElement | null, ProjectBlogProps>(
           )}
 
           {project.technologies && project.technologies.length > 0 && (
-            <div className="mb-4 flex items-center">
-              <strong className="text-secondary-900 mr-2">Technologies:</strong>{" "}
+            <div className="mb-4 flex flex-wrap items-center">
+              <strong className="hidden md:block text-secondary-900 mr-2">
+                Technologies:
+              </strong>{" "}
               {project.technologies.map((tech, index) => (
                 <div
                   key={index}
                   className="text-secondary-600 hover:text-secondary-300 cursor-default duration-300 flex items-center justify-center px-1 gap-1"
                 >
                   <TechnologyIcon tech={tech as Technology} />
-                  {tech}
+                  <span className="">{tech}</span>
                   <span className="text-black">
                     {index < project.technologies.length - 1 && ","}
                   </span>
@@ -77,7 +79,9 @@ const ProjectBlog = forwardRef<HTMLDivElement | null, ProjectBlogProps>(
             <div>
               {project.rating > 0 && (
                 <div className="flex items-center">
-                  <strong className="text-secondary-900 mr-2">How much I like this:</strong>
+                  <strong className="hidden md:block text-secondary-900 mr-2">
+                    How much I like this:
+                  </strong>
                   <StarRating rating={project.rating} />
                   <div className="mx-2">({project.rating.toFixed(1)})</div>
                 </div>

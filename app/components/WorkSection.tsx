@@ -82,7 +82,7 @@ const WorkSection: React.FC = () => {
               <ul className="list-disc list-inside">
                 {work.responsibilities.map((item, id) => (
                   <li
-                    className="hover:text-primary-600 hover:translate-x-1 transition-transform duration-300"
+                    className="md:hover:text-primary-600 md:hover:translate-x-1 transition-transform duration-300"
                     key={id}
                   >
                     {item}
@@ -95,7 +95,7 @@ const WorkSection: React.FC = () => {
               <ul className="list-disc list-inside">
                 {work.achievements.map((item, id) => (
                   <li
-                    className="hover:text-primary-600 hover:translate-x-1 transition-transform duration-300"
+                    className="md:hover:text-primary-600 md:hover:translate-x-1 transition-transform duration-300"
                     key={id}
                   >
                     {item}

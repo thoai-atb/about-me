@@ -44,7 +44,7 @@ const ProjectBlog = forwardRef<HTMLDivElement | null, ProjectBlogProps>(
               {project.highlights.map((highlight, index) => (
                 <li
                   key={index}
-                  className="text-gray-600 hover:text-secondary-600 hover:translate-x-1 transition-transform duration-300"
+                  className="text-gray-600 md:hover:text-secondary-600 md:hover:translate-x-1 transition-transform duration-300"
                 >
                   {highlight}
                 </li>
@@ -60,7 +60,7 @@ const ProjectBlog = forwardRef<HTMLDivElement | null, ProjectBlogProps>(
               {project.technologies.map((tech, index) => (
                 <div
                   key={index}
-                  className="text-secondary-600 hover:text-secondary-300 cursor-default duration-300 flex items-center justify-center px-1 gap-1"
+                  className="text-secondary-600 md:hover:text-secondary-300 cursor-default duration-300 flex items-center justify-center px-1 gap-1"
                 >
                   <TechnologyIcon tech={tech as Technology} />
                   <span className="">{tech}</span>

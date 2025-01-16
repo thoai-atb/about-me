@@ -13,7 +13,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <div className="flex bg-white pb-12 flex-col lg:flex-row">
-        <div className="flex-1 relative flex flex-col md:flex-row items-center px-4 md:px-12 py-12 bg-primary-400 shadow-lg rounded-r-lg lg:rounded-r-full slide-in-from-left-10 duration-1000 animate-in">
+        <div className="flex-1 relative flex flex-col md:flex-row items-center px-4 md:px-12 py-12 bg-primary-400 shadow-lg lg:rounded-r-full slide-in-from-left-10 duration-1000 animate-in">
           <BasePathImage
             className="rounded-full w-48 h-48 border-4 border-primary-600 shadow-xl"
             src={`/thoai.png`}
@@ -29,7 +29,7 @@ export default function Home() {
         <Section
           title="About Me"
           className="bg-white flex-1 duration-1000"
-          contentClassName="text-lg md:text-xl"
+          contentClassName="text-base md:text-xl"
         >
           I am a passionate Software Developer and DevOps with{" "}
           <strong>2+ years of working experience</strong> in designing,
@@ -47,7 +47,7 @@ export default function Home() {
           did projects that uses <i>LLMs</i>, like <i>OpenAI API</i>.
         </Section>
       </div>
-
+      <hr className="block md:hidden border-2"></hr>
       <div className="flex flex-col xl:flex-row">
         <div className="flex flex-col md:flex-row xl:flex-col items-center bg-white">
           {/* Contact Section */}
@@ -58,11 +58,12 @@ export default function Home() {
             <ContactSection />
           </Section>
           <div className="xl:w-5/6 xl:h-0 xl:border-2 border-primary-500 slide-in-from-left-10 fade-in-0 duration-2000 animate-in"></div>
+          <hr className="block md:hidden border-2 w-full"></hr>
           {/* Projects Section */}
           <Section
             title="My Projects"
             className="xl:w-96 bg-white duration-2000"
-            contentClassName="px-4 md:px-0 text-lg text-left"
+            contentClassName="px-4 md:px-0 md:text-lg text-left"
           >
             <p className="text-gray-600">
               I have worked on a variety of exciting projects whenever an idea
@@ -114,14 +115,14 @@ export default function Home() {
             <div className="pl-8 text-sm text-left text-gray-500 mb-4">
               Bachelor’s Degree in Computer Science 2022
             </div>
-            <ul className="list-disc list-inside text-left pl-8">
-              <li className="hover:text-primary-600 hover:translate-x-1 transition-transform duration-300">
+            <ul className="list-disc text-base md:text-lg list-inside text-left pl-8">
+              <li className="md:hover:text-primary-600 md:hover:translate-x-1 transition-transform duration-300">
                 Excellent student in 3 semesters (GPA ≥ 9.0 / 10.0)
               </li>
-              <li className="hover:text-primary-600 hover:translate-x-1 transition-transform duration-300">
+              <li className="md:hover:text-primary-600 md:hover:translate-x-1 transition-transform duration-300">
                 Good student in 4 semesters (GPA ≥ 8.0 / 10.0)
               </li>
-              <li className="hover:text-primary-600 hover:translate-x-1 transition-transform duration-300">
+              <li className="md:hover:text-primary-600 md:hover:translate-x-1 transition-transform duration-300">
                 Encouragement scholarship in 5 semesters
               </li>
             </ul>

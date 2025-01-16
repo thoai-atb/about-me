@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
 
 const ContactSection = () => {
   return (
-    <div className="flex flex-col text-lg items-start space-y-4">
+    <div className="flex flex-col text-base md:text-lg items-start space-y-4">
       {/* Email */}
       <a
         href="mailto:lybaothoai@gmail.com"

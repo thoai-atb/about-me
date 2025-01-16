@@ -56,7 +56,7 @@ export default function Projects() {
     <div className="min-h-screen bg-white font-sans">
       <Navigation />
       <div className="flex justify-center">
-        <div className="bg-secondary-400 w-full rounded-l-lg md:rounded-full md:mx-8 mb-8 text-secondary-900 text-4xl font-thin text-center px-8 py-4 slide-in-from-right-10 duration-1000 animate-in">
+        <div className="bg-secondary-400 w-full md:rounded-full md:mx-8 mb-8 text-secondary-900 text-4xl font-thin text-center px-8 py-4 slide-in-from-right-10 duration-1000 animate-in">
           <span>Welcome to my </span>
           <span className="text-white">Personal Projects</span>
         </div>

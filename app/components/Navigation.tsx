@@ -14,7 +14,7 @@ export default function Navigation() {
           <Link
             key={item.name}
             href={item.href}
-            className={`text-md uppercase font-semibold text-black ${item.theme} cursor-pointer transition-colors duration-300`}
+            className={`text-xs md:text-base uppercase font-semibold text-black ${item.theme} cursor-pointer transition-colors duration-300`}
           >
             {item.name}
           </Link>

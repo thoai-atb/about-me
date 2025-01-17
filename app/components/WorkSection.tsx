@@ -65,19 +65,19 @@ const WorkSection: React.FC = () => {
               {work.companyName}
             </h3>
             <div className="text-sm text-gray-500 mb-2">{work.period}</div>
-            <div className="text-gray-700 mb-4 text-base md:text-lg">
+            <div className="text-gray-700 mb-4 text-base">
               <strong>As a: </strong>
               {work.jobTitle}
             </div>
-            <div className="text-gray-700 mb-4 text-base md:text-lg">
+            <div className="text-gray-700 mb-4 text-base">
               <strong>Project: </strong>
               {work.project} - {work.projectDescription}
             </div>
-            <div className="text-gray-700 mb-4 text-base md:text-lg">
+            <div className="text-gray-700 mb-4 text-base">
               <strong>Technologies: </strong>
               {work.technologies}
             </div>
-            <div className="text-gray-700 mb-4 text-base md:text-lg">
+            <div className="text-gray-700 mb-4 text-base">
               <strong>Responsibilities</strong>
               <ul className="list-disc list-inside">
                 {work.responsibilities.map((item, id) => (
@@ -90,7 +90,7 @@ const WorkSection: React.FC = () => {
                 ))}
               </ul>
             </div>
-            <div className="text-gray-700 mb-4 text-base md:text-lg">
+            <div className="text-gray-700 mb-4 text-base">
               <strong>Achievements</strong>
               <ul className="list-disc list-inside">
                 {work.achievements.map((item, id) => (

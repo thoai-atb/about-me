@@ -14,7 +14,7 @@ const ProjectNavigationPane: React.FC<ProjectNavigationPaneProps> = ({
   onProjectClick,
 }) => {
   return (
-    <div className="sticky hidden xl:block left-4 top-4 w-96 p-4 h-5/6 bg-secondary-100 overflow-x-hidden transition-all animate-in slide-in-from-left-5 duration-500 overflow-y-auto scroll-hidden">
+    <div className="sticky hidden lg:block left-4 top-4 w-80 p-4 h-5/6 bg-secondary-100 overflow-x-hidden transition-all animate-in slide-in-from-left-5 duration-500 overflow-y-auto scroll-hidden">
       <h2 className="text-2xl font-thin text-secondary-900 mb-2 uppercase">
         Project List
       </h2>
@@ -23,7 +23,7 @@ const ProjectNavigationPane: React.FC<ProjectNavigationPaneProps> = ({
           <div key={index}>
             <li
               key={index}
-              className={`relative p-4 ml-4 h-14 text-lg flex items-center gap-4 rounded-lg cursor-pointer transition-all duration-100 ${
+              className={`relative p-4 ml-4 h-14 text-base flex items-center gap-4 rounded-lg cursor-pointer transition-all duration-100 ${
                 activeIndex === index
                   ? "text-secondary-600 font-bold"
                   : "text-secondary-900"

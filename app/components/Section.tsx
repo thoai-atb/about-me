@@ -15,8 +15,8 @@ const Section: React.FC<SectionProps> = ({
 }) => {
   return (
     <section className={`px-4 md:px-12 py-12 ${className} text-center animate-in fade-in-0 duration-1000`}>
-      <h2 className={`text-2xl font-bold uppercase text-primary-600`}>{title}</h2>
-      <div className={`mt-6 text-base md:text-2xl ${contentClassName} leading-relaxed`}>{children}</div>
+      <h2 className={`text-xl font-bold uppercase text-primary-600`}>{title}</h2>
+      <div className={`mt-6 text-base ${contentClassName} leading-relaxed`}>{children}</div>
     </section>
   );
 };

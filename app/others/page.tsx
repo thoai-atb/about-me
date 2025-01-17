@@ -75,14 +75,14 @@ export default function Others() {
     <div className="min-h-screen bg-white font-sans">
       <Navigation />
       <div className="flex justify-center">
-        <div className="bg-tertiary-400 w-full md:w-auto md:rounded-full md:mx-8 mb-8 text-tertiary-900 text-4xl font-thin text-center px-4 md:px-20 py-4 slide-in-from-right-10 duration-1000 animate-in">
+        <div className="bg-tertiary-400 w-full md:w-auto md:rounded-full md:mx-8 mb-8 text-tertiary-900 text-3xl font-thin text-center px-4 md:px-20 py-4 slide-in-from-right-10 duration-1000 animate-in">
           <span>Other </span>
           <span className="text-white">things</span>
           <span> that I do</span>
         </div>
       </div>
       <div className="bg-white">
-        <div className="max-w-screen-lg mx-auto bg-white border-tertiary-500">
+        <div className="lg:max-w-screen-md xl:max-w-screen-lg mx-auto bg-white border-tertiary-500">
           {items.map((item, index) => (
             <div key={index}>
               <ItemCard

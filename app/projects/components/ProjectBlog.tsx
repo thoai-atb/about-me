@@ -14,7 +14,7 @@ const ProjectBlog = forwardRef<HTMLDivElement | null, ProjectBlogProps>(
     return (
       <div
         ref={ref}
-        className="rounded-lg text-base md:text-lg mb-12 animate-in fade-in-0 duration-1000"
+        className="rounded-lg text-base mb-12 animate-in fade-in-0 duration-1000"
       >
         <hr className="border-2 border-secondary-500 mb-12 mx-12"></hr>
         <div className=" bg-secondary-100 p-4 rounded mb-4">

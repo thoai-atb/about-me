@@ -19,7 +19,6 @@ const WorkSection: React.FC = () => {
         "Perform code-reviewing and testing for product's new functionality",
         "Write product documentation for new features, demo in sprint review, quarter release",
         "Perform security scans and address security issues for each release",
-        "Collaborating and communicating in an English environment",
       ],
       achievements: [
         "Migrated product from Docker to Kubernetes platform",

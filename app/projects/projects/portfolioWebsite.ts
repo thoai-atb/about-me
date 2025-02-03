@@ -9,8 +9,8 @@ const projectItem: ProjectItem = {
   labels: ["website"],
   highlights: [
     "The 1st Profile page with my skills and experience",
-    "The 2nd Project page with all my projects with representative pictures",
-    "The 3rd Page for my hobbies",
+    "The 2nd Projects page with all my projects with representative pictures",
+    "The 3rd Others page just to symmectrically complete the navigation bar (really)",
   ],
   timeline: "November - December 2024",
   timestamp: new Date("2024-11-01").getTime(),

@@ -25,7 +25,7 @@ const WorkSection: React.FC = () => {
         "Migrated product from Docker to Kubernetes platform",
         "Wrote automated scripts that saved 52 man-hour manual work per year",
         "Showcase working product to potential customer",
-        "Hosts sessions internally to share new technologies to team",
+        "Host sessions internally to share new technologies to team, train a new member",
       ],
       period: "Sep 2022 - Present",
     },

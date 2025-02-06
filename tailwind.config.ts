@@ -15,7 +15,7 @@ export default {
         foreground: "var(--foreground)",
         primary: colors.sky,
         secondary: colors.orange,
-        tertiary: colors.lime
+        tertiary: colors.slate
       },
       transitionDelay: {
         '2000': '2000ms',

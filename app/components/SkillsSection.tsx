@@ -7,8 +7,8 @@ const SkillsSection = () => {
         <SkillCell
           title="Languages"
           skills={[
-            "JavaScript",
             "Python",
+            "JavaScript",
             "Java",
             "HTML, CSS",
             "JSON, YAML",
@@ -18,7 +18,7 @@ const SkillsSection = () => {
         <SkillCell
           title="Technologies"
           skills={[
-            "ReactJS, NextJS",
+            "ReactJS",
             "NodeJS",
             "ExpressJS",
             "Socket IO",
@@ -29,7 +29,7 @@ const SkillsSection = () => {
         />
         <SkillCell
           title="Database"
-          skills={["MongoDB", "MySQL", "SQL Server", "PostgreSQL"]}
+          skills={["MongoDB", "MySQL", "PostgreSQL"]}
         />
         <SkillCell
           title="Tools and IDEs"
@@ -41,7 +41,6 @@ const SkillsSection = () => {
             "Wireshark",
             "MobaXTerm",
             "Postman",
-            "Figma",
           ]}
         />
         <SkillCell
@@ -60,7 +59,7 @@ const SkillsSection = () => {
           title="Knowledge"
           skills={[
             "Scrum Agile, OOP",
-            "REST, Socket API",
+            "Rest API, Socket API",
             "Containerization",
             "Generative AI",
             "Computer network",
@@ -71,11 +70,11 @@ const SkillsSection = () => {
           title="Soft Skills"
           className="md:col-span-2"
           skills={[
-            "Use English everyday (IELTS 6.5)",
-            "Independent researching and troubleshooting",
-            "Clear communication and engaging presentation",
-            "Problem solving through deep understanding",
-            "Optimize team and personal daily work efficiency",
+            "Use English daily (IELTS 6.5)",
+            "Fast research and troubleshoot",
+            "Communicate clear and teamwork",
+            "Problem solving, planning",
+            "Optimize way of working and productivity",
           ]}
         />
       </div>

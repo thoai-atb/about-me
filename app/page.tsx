@@ -31,20 +31,16 @@ export default function Home() {
           className="bg-white flex-1 duration-1000"
           contentClassName="text-base"
         >
-          I am a passionate Software Engineer with{" "}
-          <strong>2+ years of working experience</strong> in designing,
-          developing, and deploying software, along with{" "}
+          I am a passionate Software Engineer with over two years of working experience in designing,
+          developing, and deploying software. I can proficiently use <strong>Python, JavaScript</strong> and other
+          technologies, covering {" "}
+          <strong>Front-End, Back-End, and DevOps</strong>. I enhanced my skills with lots of{" "}
           <a
             className="font-bold text-primary-700 hover:text-primary-500"
             href={process.env.NEXT_PUBLIC_BASE_PATH + "/projects"}
           >
-            many personal projects
-          </a>{" "}
-          that I did myself. I can <i>proficiently use</i> programming languages
-          such as <strong>Python, JavaScript, Java</strong> and other
-          development tools, covering different domains like{" "}
-          <strong>Front-End, Back-End, and DevOps</strong>. I also learned and
-          did projects that uses <i>LLMs</i>, like <i>OpenAI API</i>.
+            personal projects.
+          </a>{" "}I also learned to use <i>LLMs</i>, like <i>OpenAI API</i>.
         </Section>
       </div>
       <hr className="block lg:hidden border-2"></hr>
@@ -66,9 +62,8 @@ export default function Home() {
             contentClassName="px-4 md:px-0 text-left"
           >
             <p className="text-gray-600">
-              I have worked on a variety of exciting projects whenever an idea
-              popped into my mind. You can explore them all on the dedicated
-              projects page.
+              I have worked on a variety of exciting pet projects whenever an idea
+              popped into my mind. You can explore them all on the dedicated page.
             </p>
             <a
               href={process.env.NEXT_PUBLIC_BASE_PATH + "/projects"}

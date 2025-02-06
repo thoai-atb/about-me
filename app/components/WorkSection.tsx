@@ -9,7 +9,7 @@ const WorkSection: React.FC = () => {
       jobTitle: "Software Engineer",
       project: "IMS Network Function Test",
       projectDescription:
-        "A comprehensive testing framework for IMS (IP Multimedia Subsystem) Network Function Testing, designed to assist telecom companies in developing and validating IMS deployments. This framework enables the creation of test cases for critical protocols such as SIP (Session Initiation Protocol) and Diameter, to verify IMS functionality. By simulating message flows and interactions, it ensures reliable performance during development and release cycles.",
+        "A testing framework for IMS (IP Multimedia Subsystem) Network Function Testing, designed to assist telecom companies in developing and validating IMS deployments. This framework enables the creation of test cases for critical protocols such as SIP (Session Initiation Protocol) and Diameter, to verify IMS functionality. By simulating message flows and interactions, it ensures reliable performance during development and release cycles.",
       technologies: "Python Flask, TTCN-3, Linux, Docker, Kubernetes, Jenkins, Nginx",
       responsibilities: [
         "Develop testing framework for IMS (GUI, API, system logic)",

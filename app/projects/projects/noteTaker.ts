@@ -4,14 +4,14 @@ import { ProjectItem } from "../projectItem";
 const projectItem: ProjectItem = {
   title: "AI Note Taker",
   description:
-    "Do you want to have a chat bot that knows about you, the internal links, internal commands you usually run? This is Note Taker, I made it using OpenAI API, it can take notes as you chat that later can be retrieved as you ask.",
+    "This is a chat bot that knows about you, the links, commands, file paths you use, just like a developer's assistant. I made it using OpenAI API, it takes notes as you chat and later you can ask it back.",
   rating: 4.0,
   labels: ["AI", "tool"],
   highlights: [
     "Multiple users with shared database",
-    "AI instance can manage notes (create, delete, rename, etc) as you chat in real time",
-    "It can take notes about links, commands, tickets, internal knowledge",
-    'It can also be considered as a local "Stack Overflow" in the team, as it can note down common errors and solutions',
+    "It writes notes about links, commands, tickets, knowledge, things that humans don't have to remember",
+    "It can create, delete, rename notes, etc, as you chat in real time",
+    "Basically it can do whatever ChatGPT can do plus the note taking feature",
   ],
   timeline: "November 2024",
   timestamp: new Date("2024-11-01").getTime(),

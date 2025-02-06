@@ -88,6 +88,10 @@ export default function Projects() {
                   onImageClick={() => setImageSrc(project.imageSrc)}
                 />
               ))}
+            <div className="text-center text-gray-600 my-8">
+              I did more than this, but haven{`'`}t had time to add them
+              all. I can tell you if you want to know more.
+            </div>
           </div>
         </div>
 

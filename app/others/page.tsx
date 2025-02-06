@@ -22,7 +22,7 @@ const items: Item[] = [
   {
     title: "Ping Pong",
     description: "You can play ping pong with me sometime!",
-    highlights: ["Ping pong, ping pong, ping pong", "I can play when I'm tired of coding"],
+    highlights: ["Ping pong, ping pong, ping pong", "I play when I'm tired of coding"],
     imageSrc: "/hobby/pingpong.jpg",
     imageAlt: "Ping Pong hobby",
   },
@@ -64,7 +64,7 @@ const items: Item[] = [
   {
     title: "________",
     description: "I can’t tell you what this is just yet, but you’ll know soon.",
-    highlights: ["\"But it looks like some nerdy science thing\", you say", "\"Or maybe it's just some random stuff to fill the space\", he says"],
+    highlights: ["\"But it looks like some nerdy science thing,\" you said", "\"Or maybe it's just some random stuff to fill the space,\" they said"],
     imageSrc: "/hobby/lightcones.png",
     imageAlt: "Light cones",
   },

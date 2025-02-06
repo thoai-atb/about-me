@@ -3,12 +3,12 @@ import { ProjectItem } from "../projectItem";
 
 const projectItem: ProjectItem = {
   title: "Multiplayer Poker",
-  description: "I am a fan of Poker and I play it with my friends and family. One day, I decided to code the Poker game web-based, and I did. Now my friends and I often enjoy it over the VLAN network. This is that project.",
+  description: "\"Let's play some poker,\" my friend said. \"How? I can't come?\" I replied, \"Just use your darn app!\". One day, I decided to code the Poker game, and I did. Now my friends and I can play together over the network.",
   rating: 4.5,
   labels: ["game"],
   highlights: [
     "Support in-game chat",
-    "Support bots that can chat and use advance Poker strategies (check-raise/bluff)",
+    "Support bots that can also chat and use \"advance\" Poker strategies (check-raise/bluff)",
     "Dark mode + 3 additional themes (Christmas, Halloween, Tet)",
     "Include how-to-play tutorial, UI aid for hand ranking probablity based on current cards",
     "Sound effects when player wins like applause, the \"dooom\" sound, also when fold, bet and check, etc",

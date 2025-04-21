@@ -6,10 +6,10 @@ const WorkSection: React.FC = () => {
     {
       companyLogo: "/endava_logo.png",
       companyName: "DEK - Endava",
-      jobTitle: "Software Engineer",
+      jobTitle: "Software Engineer, DevOps",
       project: "IMS Network Function Test",
       projectDescription:
-        "A testing framework for IMS (IP Multimedia Subsystem) Network Function Testing, designed to assist telecom companies in developing and validating IMS deployments. This framework enables the creation of test cases for critical protocols such as SIP (Session Initiation Protocol) and Diameter, to verify IMS functionality. By simulating message flows and interactions, it ensures reliable performance during development and release cycles.",
+        "A framework for IMS (IP Multimedia Subsystem) Network Function Testing, designed to assist telecom companies in developing and validating IMS deployments. This framework enables the creation of test cases for critical protocols such as SIP (Session Initiation Protocol), Diameter, etc., to verify IMS functionality.",
       technologies: "Python Flask, TTCN-3, Linux, Docker, Kubernetes, Jenkins, Nginx",
       responsibilities: [
         "Develop testing framework for IMS (GUI, API, system logic)",
@@ -23,8 +23,8 @@ const WorkSection: React.FC = () => {
       achievements: [
         "Migrated product from Docker to Kubernetes platform",
         "Wrote automated scripts that saved 52 man-hour manual work per year",
-        "Showcase working product to potential customer",
-        "Host sessions internally to share new technologies to team, train a new member",
+        "Showcased working product to potential customer",
+        "Hosted sessions internally to share new technologies to team, trained a new member",
       ],
       period: "Sep 2022 - Present",
     },
@@ -65,7 +65,7 @@ const WorkSection: React.FC = () => {
             </h3>
             <div className="text-sm text-gray-500 mb-2">{work.period}</div>
             <div className="text-gray-700 mb-4 text-base">
-              <strong>As a: </strong>
+              <strong>Role: </strong>
               {work.jobTitle}
             </div>
             <div className="text-gray-700 mb-4 text-base">

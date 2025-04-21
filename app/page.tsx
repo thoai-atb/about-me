@@ -40,7 +40,7 @@ export default function Home() {
             href={process.env.NEXT_PUBLIC_BASE_PATH + "/projects"}
           >
             personal projects.
-          </a>{" "}I also learned to use <i>LLMs</i>, like <i>OpenAI API</i>.
+          </a>{" "}I also learned to use <i>LLMs</i>, like <i>OpenAI API</i> in my projects.
         </Section>
       </div>
       <hr className="block lg:hidden border-2"></hr>
@@ -62,8 +62,8 @@ export default function Home() {
             contentClassName="px-4 md:px-0 text-left"
           >
             <p className="text-gray-600">
-              I have worked on a variety of exciting pet projects whenever an idea
-              popped into my mind. You can explore them all on the dedicated page.
+              I have worked on a variety of exciting personal projects whenever an idea
+              comes to mind. You can explore them all on the dedicated page.
             </p>
             <a
               href={process.env.NEXT_PUBLIC_BASE_PATH + "/projects"}

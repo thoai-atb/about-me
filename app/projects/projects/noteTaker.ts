@@ -11,7 +11,7 @@ const projectItem: ProjectItem = {
     "Multiple users with shared database",
     "It writes notes about links, commands, tickets, knowledge, things that humans don't have to remember",
     "It can create, delete, rename notes, etc, as you chat in real time",
-    "Basically it can do whatever ChatGPT can do plus the note taking feature",
+    "It can do whatever ChatGPT can do plus the note taking feature",
   ],
   timeline: "November 2024",
   timestamp: new Date("2024-11-01").getTime(),

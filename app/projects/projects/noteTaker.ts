@@ -4,7 +4,7 @@ import { ProjectItem } from "../projectItem";
 const projectItem: ProjectItem = {
   title: "AI Note Taker",
   description:
-    "This is a chat bot that knows about you, the links, commands, file paths you use, just like a developer's assistant. I made it using OpenAI API, it takes notes as you chat and later you can ask it back.",
+    "This is a chat bot that can take notes about everything we want such as links, commands, file paths, numbers, texts, just like your secretary. You can ask it any info at any time. I made it using OpenAI API as a PoC and it helped a lot in my work.",
   rating: 4.0,
   labels: ["AI", "tool"],
   highlights: [

@@ -31,7 +31,7 @@ export default function Home() {
           className="bg-white flex-1 duration-1000"
           contentClassName="text-base"
         >
-          I am a passionate Software Engineer with over two years of working experience in designing,
+          I am a passionate Software Engineer with three years of working experience in designing,
           developing, and deploying software. I can proficiently use <strong>Python, JavaScript</strong> and other
           technologies, covering {" "}
           <strong>Front-End, Back-End, and DevOps</strong>. I enhanced my skills with lots of{" "}
@@ -62,8 +62,7 @@ export default function Home() {
             contentClassName="px-4 md:px-0 text-left"
           >
             <p className="text-gray-600">
-              I have worked on a variety of exciting personal projects whenever an idea
-              comes to mind. You can explore them all on the dedicated page.
+              I have worked on a variety of exciting personal projects and PoCs that enhanced my skills in React, NodeJS, Generative AI. You can explore them all on the dedicated page.
             </p>
             <a
               href={process.env.NEXT_PUBLIC_BASE_PATH + "/projects"}
